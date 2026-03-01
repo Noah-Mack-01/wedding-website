@@ -1,26 +1,45 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import 'tailwindcss';
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Wedding palette */
+  --color-cerulean: #0081a7;
+  --color-tropical-teal: #00afb9;
+  --color-light-yellow: #fdfcdc;
+  --color-soft-apricot: #fed9b7;
+  --color-vibrant-coral: #f07167;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Semantic aliases */
+  --color-background: #ffffff;
+  --color-foreground: var(--color-cerulean);
+  --color-primary: var(--color-vibrant-coral);
+  --color-accent: var(--color-tropical-teal);
+  --color-muted: var(--color-soft-apricot);
+
+  /* Typography - Single font family */
+  --font-sans: var(--font-geist-sans);
+
+  /*
+   * Typography Scale (3 sizes only)
+   * - display: Page titles, hero text (use font-light/normal)
+   * - heading: Section titles, card headers (use font-medium/semibold)
+   * - body: Everything else (use weight/color/italic for emphasis)
+   */
+  --text-display: 2.25rem;
+  --text-display--line-height: 2.5rem;
+  --text-heading: 1.25rem;
+  --text-heading--line-height: 1.75rem;
+  --text-body: 1rem;
+  --text-body--line-height: 1.5rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background) !important;
+  color: var(--color-foreground);
+}
+
+/* Disable Tailwind's automatic dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+  }
 }

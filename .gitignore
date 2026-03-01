@@ -2,13 +2,6 @@
 
 # dependencies
 /node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
 
 # testing
 /coverage
@@ -20,20 +13,38 @@
 # production
 /build
 
+# claude
+.claude/*
+
 # misc
 .DS_Store
 *.pem
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
+# ===================
+# Sensitive files
+# ===================
 
-# env files (can opt-in for committing if needed)
-.env*
+# Environment files (contains API keys, secrets)
+.env
+.env.*
 
-# vercel
+# Stripe
+stripe-*.json
+
+# Local config that may contain secrets
+.local/
+*.local.json
+config.local.*
+secrets.*
+
+# IDE settings (may contain tokens)
+.idea/
+.vscode/settings.json
+.vscode/launch.json
+
+# ===================
+# Vercel
+# ===================
 .vercel
 
 # typescript
