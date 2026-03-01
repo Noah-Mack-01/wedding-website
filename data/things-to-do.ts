@@ -97,7 +97,7 @@ export const activities: Activity[] = [
     category: 'water',
     destination: 'xcaret',
     badge: 'Included with Stay',
-    website: 'https://www.xcaret.com/en/',
+    website: 'https://www.xcaret.com/en/attractions/underground-rivers/',
   },
   {
     id: 'xcaret-snorkeling',
@@ -107,6 +107,7 @@ export const activities: Activity[] = [
     category: 'water',
     destination: 'xcaret',
     badge: 'Included with Stay',
+    website: 'https://www.xcaret.com/en/attractions/snorkel-tour/',
   },
   {
     id: 'xcaret-beach-coves',
@@ -116,6 +117,7 @@ export const activities: Activity[] = [
     category: 'water',
     destination: 'xcaret',
     badge: 'Included with Stay',
+    website: 'https://www.xcaret.com/en/attractions/aquatic-paradise-xcaret/',
   },
   {
     id: 'xcaret-kayaking',
@@ -125,6 +127,7 @@ export const activities: Activity[] = [
     category: 'water',
     destination: 'xcaret',
     badge: 'Included with Stay',
+    website: 'https://www.xcaret.com/en/xavage-activities/kayak/',
   },
 
   // Nature & Wildlife
@@ -136,6 +139,7 @@ export const activities: Activity[] = [
     category: 'nature',
     destination: 'xcaret',
     badge: 'Included with Stay',
+    website: 'https://www.xcaret.com/en/attractions-nature-lovers/',
   },
   {
     id: 'xcaret-butterfly',
@@ -145,6 +149,7 @@ export const activities: Activity[] = [
     category: 'nature',
     destination: 'xcaret',
     badge: 'Included with Stay',
+    website: 'https://www.xcaret.com/en/attractions-nature-lovers/',
   },
   {
     id: 'xcaret-aviary',
@@ -154,6 +159,7 @@ export const activities: Activity[] = [
     category: 'nature',
     destination: 'xcaret',
     badge: 'Included with Stay',
+    website: 'https://www.xcaret.com/en/attractions/aviary-xcaret/',
   },
   {
     id: 'xcaret-turtles',
@@ -163,6 +169,7 @@ export const activities: Activity[] = [
     category: 'nature',
     destination: 'xcaret',
     badge: 'Included with Stay',
+    website: 'https://www.xcaret.com/en/attractions/marine-turtle-xcaret/',
   },
   {
     id: 'xcaret-stingrays',
@@ -172,6 +179,7 @@ export const activities: Activity[] = [
     category: 'nature',
     destination: 'xcaret',
     badge: 'Included with Stay',
+    website: 'https://www.xcaret.com/en/attractions/stingrays-encounter-xcaret/',
   },
 
   // Parks & Excursions
@@ -247,6 +255,7 @@ export const activities: Activity[] = [
     category: 'culture',
     destination: 'xcaret',
     badge: 'Included with Stay',
+    website: 'https://www.xcaret.com/en/attractions/xcaret-mexico-espectacular/',
     note: 'Shows at 7pm - arrive early for best seats',
   },
   {
@@ -257,6 +266,7 @@ export const activities: Activity[] = [
     category: 'culture',
     destination: 'xcaret',
     badge: 'Included with Stay',
+    website: 'https://www.xcaret.com/en/attractions-optional-activities/',
   },
   {
     id: 'xcaret-wine',
@@ -266,6 +276,7 @@ export const activities: Activity[] = [
     category: 'culture',
     destination: 'xcaret',
     badge: 'Included with Stay',
+    website: 'https://www.xcaret.com/en/attractions/wine-pairing-xcaret-cellar/',
   },
   {
     id: 'xcaret-chocolate',
@@ -275,6 +286,7 @@ export const activities: Activity[] = [
     category: 'culture',
     destination: 'xcaret',
     badge: 'Included with Stay',
+    website: 'https://blog.xcaret.com/en/chocolate-workshop-xcaret/',
   },
   {
     id: 'xcaret-torre',
@@ -284,6 +296,7 @@ export const activities: Activity[] = [
     category: 'culture',
     destination: 'xcaret',
     badge: 'Included with Stay',
+    website: 'https://www.xcaret.com/en/attractions/scenic-tower/',
   },
 
   // Wellness & Relaxation
@@ -295,6 +308,7 @@ export const activities: Activity[] = [
     category: 'wellness',
     destination: 'xcaret',
     badge: 'Included with Stay',
+    website: 'https://www.hotelxcaretarte.com/en/spa-wellness/',
     note: 'Some premium treatments have additional cost',
   },
   {
@@ -305,6 +319,7 @@ export const activities: Activity[] = [
     category: 'wellness',
     destination: 'xcaret',
     badge: 'Included with Stay',
+    website: 'https://www.hotelxcaretarte.com/en/spa-wellness/',
   },
   {
     id: 'xcaret-fitness',
@@ -314,6 +329,7 @@ export const activities: Activity[] = [
     category: 'wellness',
     destination: 'xcaret',
     badge: 'Included with Stay',
+    website: 'https://www.hotelxcaretarte.com/en/spa-wellness/',
   },
 
   // ==========================================
@@ -330,6 +346,7 @@ export const activities: Activity[] = [
     destination: 'cancun',
     travelTime: '~1 hour',
     address: 'Zona Hotelera, Cancún',
+    website: 'https://www.tripadvisor.com/Attraction_Review-g150807-d152700-Reviews-Playa_Delfines-Cancun_Yucatan_Peninsula.html',
   },
   {
     id: 'cancun-playa-tortugas',
@@ -340,6 +357,7 @@ export const activities: Activity[] = [
     destination: 'cancun',
     travelTime: '~1 hour',
     address: 'Zona Hotelera, Cancún',
+    website: 'https://www.tripadvisor.com/Attraction_Review-g150807-d152698-Reviews-Playa_Tortugas-Cancun_Yucatan_Peninsula.html',
   },
 
   // Water Adventures
@@ -362,6 +380,7 @@ export const activities: Activity[] = [
     category: 'water',
     destination: 'cancun',
     travelTime: '~1 hour',
+    website: 'https://www.cancunsnorkeling.com/',
   },
   {
     id: 'cancun-whale-sharks',
@@ -372,6 +391,7 @@ export const activities: Activity[] = [
     destination: 'cancun',
     travelTime: '~1.5 hours',
     badge: 'Must Reserve',
+    website: 'https://www.mexicowhaleshark.com/',
     note: 'Seasonal: June - September only',
   },
 
@@ -396,6 +416,7 @@ export const activities: Activity[] = [
     category: 'adventure',
     destination: 'cancun',
     travelTime: '~1.5 hours (includes ferry)',
+    website: 'https://mexicancaribbean.travel/destination/isla-mujeres/',
     note: 'Take ferry from Puerto Juárez, rent golf cart on island',
   },
 
@@ -409,6 +430,7 @@ export const activities: Activity[] = [
     destination: 'cancun',
     travelTime: '~1 hour',
     address: 'Downtown Cancún',
+    website: 'https://www.tripadvisor.com/Attraction_Review-g150807-d504536-Reviews-Mercado_28-Cancun_Yucatan_Peninsula.html',
     note: 'Bargaining expected - start at 50% of asking price',
   },
 
@@ -434,6 +456,7 @@ export const activities: Activity[] = [
     destination: 'cancun',
     travelTime: '~1 hour',
     address: 'Downtown Cancún',
+    website: 'https://www.tripadvisor.com/Attraction_Review-g150807-d7715234-Reviews-El_Parque_de_las_Palapas-Cancun_Yucatan_Peninsula.html',
     note: 'Best in evenings - great for authentic local experience',
   },
 
@@ -461,6 +484,7 @@ export const activities: Activity[] = [
     category: 'ruins',
     destination: 'tulum',
     travelTime: '~45 min',
+    website: 'https://www.tripadvisor.com/Attraction_Review-g499447-d152763-Reviews-Coba_Ruins-Coba_Yucatan_Peninsula.html',
     note: 'Rent a bike to explore the sprawling site',
   },
 
@@ -473,6 +497,7 @@ export const activities: Activity[] = [
     category: 'cenotes',
     destination: 'tulum',
     travelTime: '~35 min',
+    website: 'https://www.visittulum.travel/en/locations/gran_cenote_',
     note: 'Use reef-safe sunscreen only - arrive early',
   },
   {
@@ -483,6 +508,7 @@ export const activities: Activity[] = [
     category: 'cenotes',
     destination: 'tulum',
     travelTime: '~20 min',
+    website: 'http://cenotedosojos.mx/en/',
     note: 'Use reef-safe sunscreen only',
   },
   {
@@ -493,6 +519,7 @@ export const activities: Activity[] = [
     category: 'cenotes',
     destination: 'tulum',
     travelTime: '~35 min',
+    website: 'https://www.tripadvisor.com/Attraction_Review-g150813-d10750550-Reviews-Cenote_Calavera-Tulum_Yucatan_Peninsula.html',
     note: 'Use reef-safe sunscreen only - for adventurous swimmers',
   },
   {
@@ -503,6 +530,7 @@ export const activities: Activity[] = [
     category: 'cenotes',
     destination: 'tulum',
     travelTime: '~50 min',
+    website: 'https://www.tripadvisor.com/Attraction_Review-g499447-d3784125-Reviews-Cenotes_Tamcach_Ha_Choo_Ha-Coba_Yucatan_Peninsula.html',
     note: 'Use reef-safe sunscreen only - combine with Cobá visit',
   },
 
@@ -516,6 +544,7 @@ export const activities: Activity[] = [
     destination: 'tulum',
     travelTime: '~30 min',
     address: 'Tulum Beach Zone',
+    website: 'https://www.tripadvisor.com/Attraction_Review-g150813-d3321137-Reviews-Playa_Paraiso-Tulum_Yucatan_Peninsula.html',
   },
   {
     id: 'tulum-playa-pescadores',
@@ -525,6 +554,7 @@ export const activities: Activity[] = [
     category: 'beach',
     destination: 'tulum',
     travelTime: '~30 min',
+    website: 'https://playapescadorestulum.com/',
     note: 'Visit early morning to see fishermen',
   },
 
@@ -538,6 +568,7 @@ export const activities: Activity[] = [
     destination: 'tulum',
     travelTime: '~45 min',
     badge: 'Must Reserve',
+    website: 'https://whc.unesco.org/en/list/410/',
     note: 'Book guided tour for best experience',
   },
   {
@@ -548,6 +579,7 @@ export const activities: Activity[] = [
     category: 'nature',
     destination: 'tulum',
     travelTime: '~40 min',
+    website: 'https://www.tripadvisor.com/Attraction_Review-g150813-d8288993-Reviews-Laguna_Kaan_Luum-Tulum_Yucatan_Peninsula.html',
     note: 'No swimming in the deep blue center (cenote below)',
   },
 
@@ -561,6 +593,7 @@ export const activities: Activity[] = [
     destination: 'tulum',
     travelTime: '~35 min',
     badge: 'Must Reserve',
+    website: 'https://www.viator.com/Tulum-tours/4WD-ATV-and-Off-Road-Tours/d23012-g9-c32',
   },
   {
     id: 'tulum-reef-snorkeling',
@@ -570,5 +603,6 @@ export const activities: Activity[] = [
     category: 'adventure',
     destination: 'tulum',
     travelTime: '~30 min',
+    website: 'https://snorkelintulum.com/',
   },
 ];

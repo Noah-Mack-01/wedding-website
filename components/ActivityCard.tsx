@@ -31,8 +31,20 @@ export default function ActivityCard({
   travelTime,
   note,
 }: ActivityCardProps) {
+  const CardWrapper = website ? 'a' : 'div';
+  const cardProps = website
+    ? {
+        href: website,
+        target: '_blank',
+        rel: 'noopener noreferrer',
+      }
+    : {};
+
   return (
-    <div className="flex h-full flex-col rounded-lg bg-white p-5 shadow-sm">
+    <CardWrapper
+      {...cardProps}
+      className={`flex h-full flex-col rounded-lg bg-white p-5 shadow-sm ${website ? 'cursor-pointer transition-shadow hover:shadow-md' : ''}`}
+    >
       <div className="flex items-start justify-between gap-3">
         <h3 className="text-heading font-medium text-primary">{name}</h3>
         <span
@@ -101,12 +113,7 @@ export default function ActivityCard({
         )}
 
         {website && (
-          <a
-            href={website}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm text-foreground hover:text-primary"
-          >
+          <span className="inline-flex items-center gap-1.5 text-sm text-foreground">
             <svg
               className="h-4 w-4"
               fill="none"
@@ -121,9 +128,9 @@ export default function ActivityCard({
               />
             </svg>
             Website
-          </a>
+          </span>
         )}
       </div>
-    </div>
+    </CardWrapper>
   );
 }
