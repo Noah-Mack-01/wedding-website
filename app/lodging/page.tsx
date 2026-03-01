@@ -15,7 +15,7 @@ export default function LodgingPage() {
           Nearby Hotels
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
-          {hotels.map((hotel) => (
+          {hotels.toSorted((a,b) => Number(a.id) - Number(b.id)).map((hotel) => (
             <HotelCard
               key={hotel.id}
               name={hotel.name}
