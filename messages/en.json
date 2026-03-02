@@ -1,0 +1,103 @@
+{
+  "nav": {
+    "home": "Home",
+    "bridalParty": "Bridal Party",
+    "schedule": "Schedule",
+    "gallery": "Gallery",
+    "thingsToDo": "Things To Do",
+    "venue": "Venue",
+    "lodging": "Lodging",
+    "faq": "FAQ",
+    "registry": "Registry"
+  },
+  "common": {
+    "viewSchedule": "View Schedule",
+    "returnHome": "Return Home",
+    "learnMore": "Learn More",
+    "openInGoogleMaps": "Open in Google Maps",
+    "loading": "Loading...",
+    "menu": "Menu"
+  },
+  "home": {
+    "title": "Home",
+    "viewSchedule": "View Schedule"
+  },
+  "schedule": {
+    "title": "Schedule",
+    "subtitle": "Timeline of events for the big day"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about our big day"
+  },
+  "bridalParty": {
+    "title": "Bridal Party",
+    "subtitle": "Meet the special people standing by our side"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Moments from our journey together"
+  },
+  "venue": {
+    "title": "Venue & Travel",
+    "subtitle": "Everything you need to know about getting there",
+    "theVenue": "The Venue",
+    "location": "Location",
+    "gettingThere": "Getting There",
+    "selectAirport": "Select your arrival airport to see directions:",
+    "routeFrom": "Route from",
+    "seeTheVenue": "See the Venue",
+    "venueGlimpse": "Get a glimpse of the beautiful venue through these posts.",
+    "ceremonyAndReception": "Ceremony & Reception",
+    "ceremony": "Ceremony",
+    "reception": "Reception",
+    "learnMore": "Learn more"
+  },
+  "lodging": {
+    "title": "Lodging",
+    "subtitle": "Where to stay during your visit",
+    "nearbyHotels": "Nearby Hotels"
+  },
+  "thingsToDo": {
+    "title": "Things To Do",
+    "subtitle": "Explore the Riviera Maya during your stay"
+  },
+  "registry": {
+    "title": "Gift Registry",
+    "subtitle": "Contribute to our honeymoon fund",
+    "bloomingdalesText": "We are also registered at Bloomingdale's",
+    "viewBloomingdales": "View Bloomingdale's Registry",
+    "giftMessage": "Your presence at our wedding is the greatest gift of all. However, if you wish to honor us with a gift, a contribution to our honeymoon fund would be greatly appreciated.",
+    "selectAmount": "Select an amount",
+    "customAmount": "Or enter a custom amount",
+    "enterAmount": "Enter amount",
+    "continueCheckout": "Continue to Checkout",
+    "completePayment": "Complete Payment",
+    "submitPayment": "Submit Payment",
+    "processing": "Processing...",
+    "unableToLoad": "Unable to load checkout"
+  },
+  "registryComplete": {
+    "thankYou": "Thank You!",
+    "contributionWithAmount": "Your generous contribution of {amount} to our honeymoon fund means the world to us.",
+    "contributionGeneric": "Your contribution to our honeymoon fund means the world to us.",
+    "grateful": "We are so grateful to have you celebrate this special time with us."
+  },
+  "badges": {
+    "includedWithStay": "Included with Stay",
+    "mustReserve": "Must Reserve"
+  },
+  "categories": {
+    "water": "Water Adventures",
+    "nature": "Nature & Wildlife",
+    "parks": "Parks & Excursions",
+    "culture": "Cultural Experiences",
+    "wellness": "Wellness & Relaxation",
+    "beach": "Beaches",
+    "ruins": "Archaeological Sites",
+    "cenotes": "Cenotes",
+    "adventure": "Adventures",
+    "nightlife": "Nightlife",
+    "shopping": "Shopping & Markets"
+  }
+}

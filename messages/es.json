@@ -1,0 +1,103 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "bridalParty": "Cortejo Nupcial",
+    "schedule": "Horario",
+    "gallery": "Galeria",
+    "thingsToDo": "Que Hacer",
+    "venue": "Lugar",
+    "lodging": "Hospedaje",
+    "faq": "Preguntas",
+    "registry": "Regalos"
+  },
+  "common": {
+    "viewSchedule": "Ver Horario",
+    "returnHome": "Volver al Inicio",
+    "learnMore": "Mas Informacion",
+    "openInGoogleMaps": "Abrir en Google Maps",
+    "loading": "Cargando...",
+    "menu": "Menu"
+  },
+  "home": {
+    "title": "Inicio",
+    "viewSchedule": "Ver Horario"
+  },
+  "schedule": {
+    "title": "Horario",
+    "subtitle": "Cronograma de eventos para el gran dia"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Todo lo que necesitas saber sobre nuestro gran dia"
+  },
+  "bridalParty": {
+    "title": "Cortejo Nupcial",
+    "subtitle": "Conoce a las personas especiales que nos acompanan"
+  },
+  "gallery": {
+    "title": "Galeria",
+    "subtitle": "Momentos de nuestro camino juntos"
+  },
+  "venue": {
+    "title": "Lugar y Viaje",
+    "subtitle": "Todo lo que necesitas saber para llegar",
+    "theVenue": "El Lugar",
+    "location": "Ubicacion",
+    "gettingThere": "Como Llegar",
+    "selectAirport": "Selecciona tu aeropuerto de llegada para ver las direcciones:",
+    "routeFrom": "Ruta desde",
+    "seeTheVenue": "Conoce el Lugar",
+    "venueGlimpse": "Echa un vistazo al hermoso lugar a traves de estas publicaciones.",
+    "ceremonyAndReception": "Ceremonia y Recepcion",
+    "ceremony": "Ceremonia",
+    "reception": "Recepcion",
+    "learnMore": "Mas informacion"
+  },
+  "lodging": {
+    "title": "Hospedaje",
+    "subtitle": "Donde hospedarte durante tu visita",
+    "nearbyHotels": "Hoteles Cercanos"
+  },
+  "thingsToDo": {
+    "title": "Que Hacer",
+    "subtitle": "Explora la Riviera Maya durante tu estancia"
+  },
+  "registry": {
+    "title": "Lista de Regalos",
+    "subtitle": "Contribuye a nuestro fondo de luna de miel",
+    "bloomingdalesText": "Tambien estamos registrados en Bloomingdale's",
+    "viewBloomingdales": "Ver Registro de Bloomingdale's",
+    "giftMessage": "Tu presencia en nuestra boda es el mejor regalo. Sin embargo, si deseas honrarnos con un obsequio, una contribucion a nuestro fondo de luna de miel seria muy apreciada.",
+    "selectAmount": "Selecciona un monto",
+    "customAmount": "O ingresa un monto personalizado",
+    "enterAmount": "Ingresa el monto",
+    "continueCheckout": "Continuar al Pago",
+    "completePayment": "Completar Pago",
+    "submitPayment": "Enviar Pago",
+    "processing": "Procesando...",
+    "unableToLoad": "No se pudo cargar el pago"
+  },
+  "registryComplete": {
+    "thankYou": "Gracias!",
+    "contributionWithAmount": "Tu generosa contribucion de {amount} a nuestro fondo de luna de miel significa mucho para nosotros.",
+    "contributionGeneric": "Tu contribucion a nuestro fondo de luna de miel significa mucho para nosotros.",
+    "grateful": "Estamos muy agradecidos de que celebres este momento especial con nosotros."
+  },
+  "badges": {
+    "includedWithStay": "Incluido con la Estancia",
+    "mustReserve": "Requiere Reserva"
+  },
+  "categories": {
+    "water": "Aventuras Acuaticas",
+    "nature": "Naturaleza y Vida Silvestre",
+    "parks": "Parques y Excursiones",
+    "culture": "Experiencias Culturales",
+    "wellness": "Bienestar y Relajacion",
+    "beach": "Playas",
+    "ruins": "Sitios Arqueologicos",
+    "cenotes": "Cenotes",
+    "adventure": "Aventuras",
+    "nightlife": "Vida Nocturna",
+    "shopping": "Compras y Mercados"
+  }
+}

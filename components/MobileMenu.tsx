@@ -1,8 +1,9 @@
 'use client';
 
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 import { useEffect } from 'react';
+import { Link } from '@/i18n/navigation';
 import { navLinks } from './Navbar';
 
 interface MobileMenuProps {
@@ -12,6 +13,13 @@ interface MobileMenuProps {
 
 export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   const pathname = usePathname();
+  const t = useTranslations('nav');
+  const tCommon = useTranslations('common');
+
+  // Check if path matches, accounting for locale prefix
+  const isActive = (href: string) => {
+    return pathname === href || pathname.endsWith(href);
+  };
 
   // Close menu on escape key
   useEffect(() => {
@@ -46,7 +54,9 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       {/* Menu Panel */}
       <div className="fixed top-0 right-0 h-screen w-full max-w-xs bg-white p-6 shadow-xl z-[60]">
         <div className="flex items-center justify-between">
-          <span className="text-heading font-semibold text-primary">Menu</span>
+          <span className="text-heading font-semibold text-primary">
+            {tCommon('menu')}
+          </span>
           <button
             type="button"
             onClick={onClose}
@@ -73,19 +83,19 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         <nav className="mt-6">
           <ul className="space-y-1">
             {navLinks.map((link) => {
-              const isActive = pathname === link.href;
+              const active = isActive(link.href);
               return (
                 <li key={link.href}>
                   <Link
                     href={link.href}
                     onClick={onClose}
                     className={`block rounded-md px-3 py-2 text-body font-medium transition-colors ${
-                      isActive
+                      active
                         ? 'bg-muted text-primary'
                         : 'text-foreground hover:bg-light-yellow/50 hover:text-primary'
                     }`}
                   >
-                    {link.label}
+                    {t(link.labelKey)}
                   </Link>
                 </li>
               );

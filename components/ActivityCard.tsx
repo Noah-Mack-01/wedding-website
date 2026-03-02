@@ -1,4 +1,22 @@
-import { categoryColors, type ActivityCategory } from '@/data/things-to-do';
+'use client';
+
+import { useTranslations } from 'next-intl';
+import type { ActivityCategory } from '@/data/types';
+
+// Category colors need to be defined here since they don't need translation
+const categoryColors: Record<ActivityCategory, string> = {
+  water: 'bg-blue-100 text-blue-800',
+  nature: 'bg-green-100 text-green-800',
+  parks: 'bg-purple-100 text-purple-800',
+  culture: 'bg-amber-100 text-amber-800',
+  wellness: 'bg-pink-100 text-pink-800',
+  beach: 'bg-cyan-100 text-cyan-800',
+  ruins: 'bg-stone-100 text-stone-800',
+  cenotes: 'bg-teal-100 text-teal-800',
+  adventure: 'bg-orange-100 text-orange-800',
+  nightlife: 'bg-indigo-100 text-indigo-800',
+  shopping: 'bg-rose-100 text-rose-800',
+};
 
 interface ActivityCardProps {
   name: string;
@@ -6,16 +24,16 @@ interface ActivityCardProps {
   category: ActivityCategory;
   address?: string;
   website?: string;
-  badge?: string;
+  badge?: 'includedWithStay' | 'mustReserve';
   travelTime?: string;
   note?: string;
 }
 
 function getBadgeStyles(badge: string): string {
-  if (badge === 'Included with Stay') {
+  if (badge === 'includedWithStay') {
     return 'bg-green-100 text-green-800';
   }
-  if (badge === 'Must Reserve') {
+  if (badge === 'mustReserve') {
     return 'bg-amber-100 text-amber-800';
   }
   return 'bg-gray-100 text-gray-800';
@@ -31,6 +49,9 @@ export default function ActivityCard({
   travelTime,
   note,
 }: ActivityCardProps) {
+  const t = useTranslations('badges');
+  const tCategories = useTranslations('categories');
+
   const CardWrapper = website ? 'a' : 'div';
   const cardProps = website
     ? {
@@ -48,9 +69,9 @@ export default function ActivityCard({
       <div className="flex items-start justify-between gap-3">
         <h3 className="text-heading font-medium text-primary">{name}</h3>
         <span
-          className={`flex-shrink-0 rounded-full px-2.5 py-0.5 text-xs font-semibold capitalize ${categoryColors[category]}`}
+          className={`flex-shrink-0 rounded-full px-2.5 py-0.5 text-xs font-semibold ${categoryColors[category]}`}
         >
-          {category}
+          {tCategories(category)}
         </span>
       </div>
 
@@ -58,7 +79,7 @@ export default function ActivityCard({
         <span
           className={`mt-2 inline-flex w-fit rounded-full px-2 py-0.5 text-xs font-medium ${getBadgeStyles(badge)}`}
         >
-          {badge}
+          {t(badge)}
         </span>
       )}
 
