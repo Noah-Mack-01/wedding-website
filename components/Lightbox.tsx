@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect, useCallback } from 'react';
-import type { GalleryPhoto } from '@/data/gallery';
+import type { GalleryPhoto } from '@/data/types';
 
 interface LightboxProps {
   photos: GalleryPhoto[];
