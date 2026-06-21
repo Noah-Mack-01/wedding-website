@@ -3,7 +3,6 @@ interface AirportCardProps {
   code: string;
   distance: string;
   driveTime: string;
-  directions: string[];
   rideshareEstimate?: string;
   shuttleInfo?: string;
 }
@@ -13,7 +12,6 @@ export default function AirportCard({
   code,
   distance,
   driveTime,
-  directions,
   rideshareEstimate,
   shuttleInfo,
 }: AirportCardProps) {
@@ -21,7 +19,7 @@ export default function AirportCard({
     <div className="rounded-lg bg-white p-6 shadow-sm">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <h3 className="text-lg font-semibold text-primary">{name}</h3>
+          <h3 className="text-heading font-semibold text-primary">{name}</h3>
           <p className="text-body text-foreground">Airport Code: {code}</p>
         </div>
         <span className="flex-shrink-0 rounded-full bg-muted px-3 py-1 text-body font-semibold text-primary">
@@ -69,20 +67,9 @@ export default function AirportCard({
         </div>
       </div>
 
-      <div className="mt-6">
-        <h4 className="mb-3 font-medium text-primary">Driving Directions</h4>
-        <ol className="list-inside list-decimal space-y-2 text-body text-foreground">
-          {directions.map((step, index) => (
-            <li key={index}>{step}</li>
-          ))}
-        </ol>
-      </div>
-
       {(rideshareEstimate || shuttleInfo) && (
         <div className="mt-6 border-t border-soft-apricot pt-4">
-          <h4 className="mb-3 font-medium text-primary">
-            Transportation Options
-          </h4>
+          <h4 className="mb-3 font-medium text-primary">Transportation Options</h4>
           <div className="space-y-2 text-body">
             {rideshareEstimate && (
               <div className="flex items-start gap-2">

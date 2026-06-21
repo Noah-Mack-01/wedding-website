@@ -2,25 +2,14 @@ import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { Geist, Geist_Mono } from 'next/font/google';
-import { Toaster } from 'sonner';
 import { routing } from '@/i18n/navigation';
 import Navbar from '@/components/Navbar';
 import '../globals.css';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
-
 export const metadata: Metadata = {
-  title: 'Sarah & Michael - Wedding',
+  title: 'Isabella & Noah - Wedding',
   description: 'Join us in celebrating our special day',
+  icons: { icon: [] },
 };
 
 export function generateStaticParams() {
@@ -44,13 +33,10 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="antialiased">
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           <main>{children}</main>
-          <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>

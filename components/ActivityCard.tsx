@@ -1,27 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import type { ActivityCategory } from '@/data/types';
-
-// Category colors need to be defined here since they don't need translation
-const categoryColors: Record<ActivityCategory, string> = {
-  water: 'bg-blue-100 text-blue-800',
-  nature: 'bg-green-100 text-green-800',
-  parks: 'bg-purple-100 text-purple-800',
-  culture: 'bg-amber-100 text-amber-800',
-  wellness: 'bg-pink-100 text-pink-800',
-  beach: 'bg-cyan-100 text-cyan-800',
-  ruins: 'bg-stone-100 text-stone-800',
-  cenotes: 'bg-teal-100 text-teal-800',
-  adventure: 'bg-orange-100 text-orange-800',
-  nightlife: 'bg-indigo-100 text-indigo-800',
-  shopping: 'bg-rose-100 text-rose-800',
-};
 
 interface ActivityCardProps {
   name: string;
   description: string;
-  category: ActivityCategory;
   address?: string;
   website?: string;
   badge?: 'includedWithStay' | 'mustReserve';
@@ -42,7 +25,6 @@ function getBadgeStyles(badge: string): string {
 export default function ActivityCard({
   name,
   description,
-  category,
   address,
   website,
   badge,
@@ -50,7 +32,6 @@ export default function ActivityCard({
   note,
 }: ActivityCardProps) {
   const t = useTranslations('badges');
-  const tCategories = useTranslations('categories');
 
   const CardWrapper = website ? 'a' : 'div';
   const cardProps = website
@@ -66,18 +47,11 @@ export default function ActivityCard({
       {...cardProps}
       className={`flex h-full flex-col rounded-lg bg-white p-5 shadow-sm ${website ? 'cursor-pointer transition-shadow hover:shadow-md' : ''}`}
     >
-      <div className="flex items-start justify-between gap-3">
-        <h3 className="text-heading font-medium text-primary">{name}</h3>
-        <span
-          className={`flex-shrink-0 rounded-full px-2.5 py-0.5 text-xs font-semibold ${categoryColors[category]}`}
-        >
-          {tCategories(category)}
-        </span>
-      </div>
+      <h3 className="text-heading font-medium text-primary">{name}</h3>
 
       {badge && (
         <span
-          className={`mt-2 inline-flex w-fit rounded-full px-2 py-0.5 text-xs font-medium ${getBadgeStyles(badge)}`}
+          className={`mt-2 inline-flex w-fit rounded-full px-2 py-0.5 text-body font-medium ${getBadgeStyles(badge)}`}
         >
           {t(badge)}
         </span>
@@ -86,12 +60,12 @@ export default function ActivityCard({
       <p className="mt-2 flex-grow text-body text-foreground">{description}</p>
 
       {note && (
-        <p className="mt-2 text-sm italic text-vibrant-coral">{note}</p>
+        <p className="mt-2 text-body italic text-vibrant-coral">{note}</p>
       )}
 
       <div className="mt-3 flex flex-wrap gap-3">
         {travelTime && (
-          <span className="inline-flex items-center gap-1.5 text-sm text-cerulean">
+          <span className="inline-flex items-center gap-1.5 text-body text-cerulean">
             <svg
               className="h-4 w-4"
               fill="none"
@@ -110,7 +84,7 @@ export default function ActivityCard({
         )}
 
         {address && (
-          <span className="inline-flex items-center gap-1.5 text-sm text-vibrant-coral">
+          <span className="inline-flex items-center gap-1.5 text-body text-vibrant-coral">
             <svg
               className="h-4 w-4"
               fill="none"
@@ -134,7 +108,7 @@ export default function ActivityCard({
         )}
 
         {website && (
-          <span className="inline-flex items-center gap-1.5 text-sm text-foreground">
+          <span className="inline-flex items-center gap-1.5 text-body text-foreground">
             <svg
               className="h-4 w-4"
               fill="none"

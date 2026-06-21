@@ -2,21 +2,21 @@
 
 @theme inline {
   /* Wedding palette */
-  --color-cerulean: #0081a7;
-  --color-tropical-teal: #00afb9;
-  --color-light-yellow: #fdfcdc;
-  --color-soft-apricot: #fed9b7;
-  --color-vibrant-coral: #f07167;
+  --color-cerulean: #16697A;
+  --color-tropical-teal: #16697A;
+  --color-light-yellow: #EDE7E3;
+  --color-soft-apricot: #EDE7E3;
+  --color-vibrant-coral: #16697A;
 
   /* Semantic aliases */
-  --color-background: #ffffff;
-  --color-foreground: var(--color-cerulean);
-  --color-primary: var(--color-vibrant-coral);
-  --color-accent: var(--color-tropical-teal);
-  --color-muted: var(--color-soft-apricot);
+  --color-background: #F1F1E3;
+  --color-foreground: #16697A;
+  --color-primary: #16697A;
+  --color-accent: #EDE7E3;
+  --color-muted: #EDE7E3;
 
   /* Typography - Single font family */
-  --font-sans: var(--font-geist-sans);
+  --font-sans: 'Aptos Serif', Georgia, 'Times New Roman', serif;
 
   /*
    * Typography Scale (3 sizes only)

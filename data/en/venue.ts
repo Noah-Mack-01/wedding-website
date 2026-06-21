@@ -12,27 +12,36 @@ export const venueData: VenueData = {
     phone: '+52 998 883 3143',
     website: 'https://www.xcaret.com',
   },
+  welcomeEvent: {
+    name: 'Welcome Event',
+    date: 'March 12, 2027',
+    time: '5:00 PM',
+  },
   ceremonyLocation: {
     name: 'Chapel of Guadalupe',
+    date: 'March 13, 2027',
+    time: '7:00 PM',
     description:
       "Built around a sacred cenote as an offering to Our Lady of Guadalupe, this stunning chapel features an altar at the water's edge and a Virgin carved into a tree trunk standing 39 feet high. Officially recognized by the Roman Catholic Church.",
-    highlights: [
-      'Built around a natural cenote',
-      "Altar positioned at the water's edge",
-      '39-foot Virgin carved into tree trunk',
-      'Recognized by the Roman Catholic Church',
+    images: [
+      '/images/venue/chapel-1.jpg',
+      '/images/venue/chapel-2.jpg',
+      '/images/venue/chapel-3.jpg',
+      '/images/venue/chapel-4.jpg',
+      '/images/venue/chapel-5.jpg',
     ],
     website: 'https://www.xcaret.com/en/attractions/guadalupe-chapel/',
   },
   receptionLocation: {
     name: 'La Isla',
+    date: 'March 13, 2027',
+    time: '8:00 PM',
     description:
       'A magical venue featuring a spiral descent path that leads to an underground river crossing. A glass bridge connects to an elegantly equipped palapa, creating an unforgettable setting for our celebration.',
-    highlights: [
-      'Spiral descent path through lush jungle',
-      'Underground river crossing',
-      'Glass bridge to reception palapa',
-      'Open-air palapa for dining and dancing',
+    images: [
+      '/images/venue/la-isla-1.jpg',
+      '/images/venue/la-isla-2.jpg',
+      '/images/venue/la-isla-3.jpeg',
     ],
     website: 'https://www.bodasxcaret.com/en/xcaret-locations/',
   },
@@ -49,12 +58,6 @@ export const venueData: VenueData = {
       code: 'CUN',
       distance: '75 km (47 miles)',
       driveTime: '1 hour 15 minutes',
-      directions: [
-        'Exit the airport and follow signs to Highway 307 South',
-        'Continue south on Highway 307 toward Playa del Carmen',
-        'Pass through Playa del Carmen and continue south',
-        'Xcaret Park entrance will be on your left, well-marked with signage',
-      ],
       rideshareEstimate: '$45-60 USD (Uber/Taxi)',
       shuttleInfo:
         'Xcaret offers direct shuttle service from Cancun Airport. We recommend booking in advance through their website.',
@@ -67,11 +70,6 @@ export const venueData: VenueData = {
       code: 'TQO',
       distance: '45 km (28 miles)',
       driveTime: '45 minutes',
-      directions: [
-        'Exit the airport and head north on Highway 307',
-        'Continue north toward Playa del Carmen',
-        'Xcaret Park entrance will be on your right, well-marked with signage',
-      ],
       rideshareEstimate: '$30-45 USD (Uber/Taxi)',
       shuttleInfo:
         'The new Tulum Airport is closer to Xcaret. Taxi and rideshare services are available at the terminal.',

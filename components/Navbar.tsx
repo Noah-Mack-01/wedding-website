@@ -15,7 +15,6 @@ export interface NavLink {
 export const navLinks: NavLink[] = [
   { labelKey: 'home', href: '/home' },
   { labelKey: 'bridalParty', href: '/bridal-party' },
-  { labelKey: 'schedule', href: '/schedule' },
   { labelKey: 'gallery', href: '/gallery' },
   { labelKey: 'thingsToDo', href: '/things-to-do' },
   { labelKey: 'venue', href: '/venue' },
@@ -42,7 +41,7 @@ export default function Navbar() {
             href="/home"
             className="text-heading font-semibold tracking-tight text-primary"
           >
-            S & M
+            I & N
           </Link>
 
           <div className="hidden md:flex md:items-center md:space-x-1">

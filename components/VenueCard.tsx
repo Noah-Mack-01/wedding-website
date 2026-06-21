@@ -21,36 +21,10 @@ export default function VenueCard({
   email,
   website,
 }: VenueCardProps) {
-  const fullAddress = `${address}, ${city}, ${state} ${zipCode}`;
-
   return (
     <div className="rounded-lg bg-white p-6 shadow-sm">
-      <h3 className="text-xl font-semibold text-primary">{name}</h3>
+      <h3 className="text-heading font-semibold text-primary">{name}</h3>
       <p className="mt-2 text-body text-foreground">{description}</p>
-
-      <div className="mt-4 space-y-2">
-        <div className="flex items-start gap-2 text-body text-foreground">
-          <svg
-            className="mt-0.5 h-4 w-4 flex-shrink-0 text-vibrant-coral"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-            />
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-            />
-          </svg>
-          <span>{fullAddress}</span>
-        </div>
-      </div>
 
       <div className="mt-4 flex flex-wrap gap-4">
         {phone && (

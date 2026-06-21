@@ -15,13 +15,6 @@ export default function DestinationSection({
 }: DestinationSectionProps) {
   return (
     <section id={id} className="mb-16 scroll-mt-24">
-      {/* Decorative divider */}
-      <div className="mb-8 flex items-center gap-4">
-        <div className="h-px flex-grow bg-gradient-to-r from-transparent via-vibrant-coral to-transparent" />
-        <div className="h-2 w-2 rotate-45 bg-vibrant-coral" />
-        <div className="h-px flex-grow bg-gradient-to-r from-transparent via-vibrant-coral to-transparent" />
-      </div>
-
       {/* Section header */}
       <div className="mb-8 text-center">
         <h2 className="text-display font-semibold tracking-tight text-primary">
@@ -31,7 +24,7 @@ export default function DestinationSection({
           <p className="mt-2 text-body italic text-vibrant-coral">{subtitle}</p>
         )}
         {travelInfo && (
-          <p className="mt-2 inline-flex items-center gap-1.5 text-sm text-cerulean">
+          <p className="mt-2 inline-flex items-center gap-1.5 text-body text-cerulean">
             <svg
               className="h-4 w-4"
               fill="none"

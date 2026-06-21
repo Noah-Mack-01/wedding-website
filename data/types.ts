@@ -4,7 +4,7 @@ export interface WeddingDetails {
   coupleName: string;
   tagline?: string;
   date: string;
-  time: string;
+  time?: string;
   venue: {
     name: string;
     address: string;
@@ -87,7 +87,6 @@ export interface Airport {
   code: string;
   distance: string;
   driveTime: string;
-  directions: string[];
   rideshareEstimate?: string;
   shuttleInfo?: string;
   routeMapEmbedUrl: string;
@@ -104,12 +103,21 @@ export interface SocialPost {
 export interface CeremonyLocation {
   name: string;
   description: string;
-  highlights: string[];
+  images?: string[];
   website?: string;
+  date?: string;
+  time?: string;
+}
+
+export interface WelcomeEvent {
+  name: string;
+  date: string;
+  time: string;
 }
 
 export interface VenueData {
   venue: VenueInfo;
+  welcomeEvent?: WelcomeEvent;
   ceremonyLocation: CeremonyLocation;
   receptionLocation: CeremonyLocation;
   map: MapConfig;
@@ -123,15 +131,8 @@ export interface Hotel {
   address: string;
   phone?: string;
   website?: string;
-  hasGroupRate: boolean;
-  groupRateInfo?: string;
-  bookingDeadline?: string;
-}
-
-export interface BulkLodging {
-  title: string;
-  description: string;
-  googleFormUrl: string;
+  logoUrl?: string;
+  brandColor?: string;
 }
 
 export interface GalleryPhoto {
@@ -143,26 +144,12 @@ export interface GalleryPhoto {
 }
 
 // Things to do types
-export type ActivityCategory =
-  | 'water'
-  | 'nature'
-  | 'parks'
-  | 'culture'
-  | 'wellness'
-  | 'beach'
-  | 'ruins'
-  | 'cenotes'
-  | 'adventure'
-  | 'nightlife'
-  | 'shopping';
-
-export type Destination = 'xcaret' | 'cancun' | 'tulum';
+export type Destination = 'xcaret' | 'nightlife' | 'beach' | 'ruins' | 'cenotes';
 
 export interface Activity {
   id: string;
   name: string;
   description: string;
-  category: ActivityCategory;
   destination: Destination;
   address?: string;
   website?: string;
@@ -174,6 +161,6 @@ export interface Activity {
 export interface DestinationInfo {
   id: Destination;
   title: string;
-  subtitle: string;
-  travelInfo: string;
+  subtitle?: string;
+  travelInfo?: string;
 }

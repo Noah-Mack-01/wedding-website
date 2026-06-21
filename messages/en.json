@@ -5,9 +5,10 @@
     "schedule": "Schedule",
     "gallery": "Gallery",
     "thingsToDo": "Things To Do",
-    "venue": "Venue",
-    "lodging": "Lodging",
+    "venue": "Schedule & Venue",
+    "lodging": "Lodging & Transportation",
     "faq": "FAQ",
+    "rsvp": "RSVP",
     "registry": "Registry"
   },
   "common": {
@@ -20,7 +21,17 @@
   },
   "home": {
     "title": "Home",
-    "viewSchedule": "View Schedule"
+    "viewSchedule": "View Schedule",
+    "coupleName": "Isabella Patino Fuentes & Noah Mack",
+    "tagline": "Together Forever",
+    "date": "March 13, 2027",
+    "countdownDays": "Days",
+    "countdownHours": "Hours",
+    "countdownMinutes": "Minutes",
+    "countdownSeconds": "Seconds",
+    "venueName": "Chapel of Guadalupe, Xcaret Park",
+    "venueCity": "Playa del Carmen",
+    "venueState": "Mexico"
   },
   "schedule": {
     "title": "Schedule",
@@ -39,9 +50,8 @@
     "subtitle": "Moments from our journey together"
   },
   "venue": {
-    "title": "Venue & Travel",
+    "title": "Schedule & Venue",
     "subtitle": "Everything you need to know about getting there",
-    "theVenue": "The Venue",
     "location": "Location",
     "gettingThere": "Getting There",
     "selectAirport": "Select your arrival airport to see directions:",
@@ -54,34 +64,37 @@
     "learnMore": "Learn more"
   },
   "lodging": {
-    "title": "Lodging",
-    "subtitle": "Where to stay during your visit",
-    "nearbyHotels": "Nearby Hotels"
+    "title": "Lodging & Transportation",
+    "subtitle": ""
   },
   "thingsToDo": {
     "title": "Things To Do",
     "subtitle": "Explore the Riviera Maya during your stay"
   },
+  "rsvp": {
+    "title": "RSVP",
+    "subtitle": "Please respond by February 1, 2027",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your full name",
+    "nameRequired": "Please enter your name",
+    "attendingLabel": "Will you be attending?",
+    "attendingRequired": "Please let us know if you're attending",
+    "attendingYes": "Joyfully accepts",
+    "attendingNo": "Regretfully declines",
+    "guestsLabel": "Number of guests",
+    "dietaryLabel": "Dietary restrictions",
+    "dietaryPlaceholder": "Any allergies or dietary needs (optional)",
+    "submit": "Send RSVP",
+    "submitting": "Sending...",
+    "thankYou": "Thank you!",
+    "confirmationMessage": "We've received your RSVP and can't wait to celebrate with you."
+  },
   "registry": {
     "title": "Gift Registry",
-    "subtitle": "Contribute to our honeymoon fund",
+    "subtitle": "Contribute to our House fund",
     "bloomingdalesText": "We are also registered at Bloomingdale's",
-    "viewBloomingdales": "View Bloomingdale's Registry",
-    "giftMessage": "Your presence at our wedding is the greatest gift of all. However, if you wish to honor us with a gift, a contribution to our honeymoon fund would be greatly appreciated.",
-    "selectAmount": "Select an amount",
-    "customAmount": "Or enter a custom amount",
-    "enterAmount": "Enter amount",
-    "continueCheckout": "Continue to Checkout",
-    "completePayment": "Complete Payment",
-    "submitPayment": "Submit Payment",
-    "processing": "Processing...",
-    "unableToLoad": "Unable to load checkout"
-  },
-  "registryComplete": {
-    "thankYou": "Thank You!",
-    "contributionWithAmount": "Your generous contribution of {amount} to our honeymoon fund means the world to us.",
-    "contributionGeneric": "Your contribution to our honeymoon fund means the world to us.",
-    "grateful": "We are so grateful to have you celebrate this special time with us."
+    "giftMessage": "Contribute to our house fund",
+    "contributeButton": "Contribute"
   },
   "badges": {
     "includedWithStay": "Included with Stay",

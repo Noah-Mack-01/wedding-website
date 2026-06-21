@@ -1,5 +1,6 @@
 interface EventCardProps {
   name: string;
+  date?: string;
   time: string;
   endTime?: string;
   location?: string;
@@ -8,6 +9,7 @@ interface EventCardProps {
 
 export default function EventCard({
   name,
+  date,
   time,
   endTime,
   location,
@@ -15,7 +17,7 @@ export default function EventCard({
 }: EventCardProps) {
   return (
     <div className="relative flex gap-6 pb-8 last:pb-0">
-      <div className="absolute left-[11px] top-3 h-full w-px bg-soft-apricot last:hidden" />
+
       <div className="relative z-10 mt-1.5 h-6 w-6 flex-shrink-0 rounded-full border-2 border-vibrant-coral bg-white" />
 
       <div className="flex-1">

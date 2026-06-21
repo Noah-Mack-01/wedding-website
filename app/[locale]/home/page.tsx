@@ -1,6 +1,6 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { Link } from '@/i18n/navigation';
 import type { Locale } from '@/i18n/config';
+import CountdownTimer from '@/components/CountdownTimer';
 
 interface Props {
   params: Promise<{ locale: Locale }>;
@@ -12,41 +12,30 @@ export default async function HomePage({ params }: Props) {
 
   const t = await getTranslations('home');
 
-  // Import locale-specific data
-  const { weddingDetails } = await import(`@/data/${locale}/home`);
-  const { coupleName, tagline, date, time, venue } = weddingDetails;
-
   return (
     <div className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center px-4 py-16">
       <div className="text-center">
         <h1 className="text-display font-light tracking-wide text-primary">
-          {coupleName}
+          {t('coupleName')}
         </h1>
-
-        {tagline && (
-          <p className="mt-4 text-body italic text-tropical-teal">{tagline}</p>
-        )}
 
         <div className="mx-auto my-8 h-px w-24 bg-soft-apricot" />
 
-        <p className="text-heading font-semibold text-foreground">{date}</p>
-        <p className="mt-2 text-body text-vibrant-coral">{time}</p>
+        <p className="text-heading font-semibold text-foreground">{t('date')}</p>
+        <CountdownTimer
+          labels={{
+            days: t('countdownDays'),
+            hours: t('countdownHours'),
+            minutes: t('countdownMinutes'),
+            seconds: t('countdownSeconds'),
+          }}
+        />
 
         <div className="mt-8 text-foreground">
-          <p className="text-heading font-medium">{venue.name}</p>
-          <p className="mt-1 text-body">{venue.address}</p>
-          <p className="text-body">
-            {venue.city}, {venue.state}
+          <p className="text-heading font-medium">{t('venueName')}</p>
+          <p className="mt-1 text-body">
+            {t('venueCity')}, {t('venueState')}
           </p>
-        </div>
-
-        <div className="mt-12">
-          <Link
-            href="/schedule"
-            className="inline-block rounded-full bg-primary px-8 py-3 text-body font-medium text-white transition-colors hover:bg-vibrant-coral/80"
-          >
-            {t('viewSchedule')}
-          </Link>
         </div>
       </div>
     </div>

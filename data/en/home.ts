@@ -1,15 +1,13 @@
 import type { WeddingDetails } from '../types';
 
 export const weddingDetails: WeddingDetails = {
-  coupleName: 'Sarah & Michael',
-  tagline: 'Together Forever',
-  date: 'September 15, 2025',
-  time: '4:00 PM',
+  coupleName: 'Isabella Patino Fuentes & Noah Mack',
+  date: 'March 13, 2027',
   venue: {
-    name: 'The Grand Estate',
-    address: '123 Wedding Lane',
-    city: 'Charleston',
-    state: 'SC',
+    name: 'Hotel Xcaret Arte',
+    address: 'Carretera Chetumal, Puerto Juarez km 282',
+    city: 'Playa del Carmen',
+    state: 'Mexico',
   },
   heroImageUrl: '/images/hero.jpg',
 };
