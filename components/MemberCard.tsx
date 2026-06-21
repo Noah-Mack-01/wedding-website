@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import type { SocialLink, BridalPartyRole } from '@/data/bridal-party';
+import type { SocialLink, BridalPartyRole } from '@/data/types';
 
 interface MemberCardProps {
   name: string;

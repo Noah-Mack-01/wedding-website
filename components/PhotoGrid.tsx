@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import type { GalleryPhoto } from '@/data/gallery';
+import type { GalleryPhoto } from '@/data/types';
 
 interface PhotoGridProps {
   photos: GalleryPhoto[];
