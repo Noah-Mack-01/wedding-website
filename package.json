@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --experimental-https",
-    "build": "next build",
-    "build:worker": "next build && opennextjs-cloudflare build && cp -r .open-next/assets/. .open-next/ && cp .open-next/worker.js .open-next/_worker.js",
+    "build": "next build --no-turbopack",
+    "build:worker": "next build --no-turbopack && opennextjs-cloudflare build && cp -r .open-next/assets/. .open-next/ && cp .open-next/worker.js .open-next/_worker.js",
     "prettier": "prettier --write .",
     "start": "next start",
     "lint": "eslint"
