@@ -52,3 +52,5 @@ secrets.*
 next-env.d.ts
 .open-next
 .wrangler
+
+_image-originals/
