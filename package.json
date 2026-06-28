@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev --experimental-https",
     "build": "next build --webpack",
-    "build:worker": "next build --webpack && opennextjs-cloudflare build && cp -r .open-next/assets/. .open-next/ && cp .open-next/worker.js .open-next/_worker.js",
+    "build:worker": "next build --webpack && opennextjs-cloudflare build",
+    "deploy": "bun run build:worker && wrangler deploy",
+    "preview": "bun run build:worker && wrangler dev",
     "prettier": "prettier --write .",
     "start": "next start",
     "lint": "eslint"
