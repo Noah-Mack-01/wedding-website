@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --experimental-https",
     "build": "next build",
-    "build:worker": "next build && opennextjs-cloudflare build",
+    "build:worker": "next build && opennextjs-cloudflare build && cp .open-next/worker.js .open-next/assets/_worker.js",
     "prettier": "prettier --write .",
     "start": "next start",
     "lint": "eslint"

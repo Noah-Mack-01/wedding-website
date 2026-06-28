@@ -1,8 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
-  "regions": ["iad1"],
-  "env": {
-    "STRIPE_SECRET_KEY": "@stripe-secret-key"
-  }
+  "regions": ["iad1"]
 }
