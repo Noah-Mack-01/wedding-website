@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --experimental-https",
     "build": "next build",
+    "build:worker": "next build && opennextjs-cloudflare build",
     "prettier": "prettier --write .",
     "start": "next start",
     "lint": "eslint"
@@ -12,7 +13,7 @@
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^7.2.0",
     "formik": "^2.4.9",
-    "next": "16.1.6",
+    "next": "16.2.9",
     "next-intl": "^4.8.3",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
@@ -21,14 +22,16 @@
     "yup": "^1.7.1"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.19.11",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.1.6",
+    "eslint-config-next": "16.2.9",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.103.0"
   },
   "ignoreScripts": [
     "sharp",
