@@ -164,3 +164,26 @@ export interface DestinationInfo {
   subtitle?: string;
   travelInfo?: string;
 }
+
+// RSVP types (Supabase data layer)
+export interface Invite {
+  code: string;
+  name: string;
+  completed: boolean;
+  last_updated: string;
+}
+
+export interface Attendee {
+  id: string;
+  invite_id: string;
+  name: string;
+  going: boolean | null;
+  attending_cocktail: boolean | null;
+}
+
+/** A single attendee's answers submitted from the RSVP form. */
+export interface AttendeeResponse {
+  id: string;
+  going: boolean | null;
+  attending_cocktail: boolean | null;
+}

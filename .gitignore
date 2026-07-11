@@ -54,3 +54,5 @@ next-env.d.ts
 .wrangler
 
 _image-originals/
+
+.dev.vars
