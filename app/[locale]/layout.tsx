@@ -36,7 +36,9 @@ export default async function LocaleLayout({ children, params }: Props) {
       <body className="antialiased">
         <NextIntlClientProvider messages={messages}>
           <Navbar />
-          <main>{children}</main>
+          <main className="mx-auto min-h-[calc(100vh-4rem)] w-full max-w-7xl border-x border-soft-apricot/40 bg-background shadow-[0_0_40px_-12px_rgba(22,105,122,0.08)]">
+            {children}
+          </main>
         </NextIntlClientProvider>
       </body>
     </html>

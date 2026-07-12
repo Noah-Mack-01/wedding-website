@@ -9,7 +9,8 @@
   --color-vibrant-coral: #16697A;
 
   /* Semantic aliases */
-  --color-background: #F1F1E3;
+  --color-page: #F9F9EF;
+  --color-background: #FBF9F4;
   --color-foreground: #16697A;
   --color-primary: #16697A;
   --color-accent: #EDE7E3;
@@ -33,7 +34,7 @@
 }
 
 body {
-  background: var(--color-background) !important;
+  background: var(--color-page) !important;
   color: var(--color-foreground);
 }
 
