@@ -167,8 +167,7 @@ export interface DestinationInfo {
 
 // RSVP types (Supabase data layer)
 export interface Invite {
-  code: string;
-  name: string;
+  id: string;
   completed: boolean;
   last_updated: string;
 }
@@ -177,6 +176,7 @@ export interface Attendee {
   id: string;
   invite_id: string;
   name: string;
+  email: string | null;
   going: boolean | null;
   attending_cocktail: boolean | null;
 }
@@ -186,4 +186,10 @@ export interface AttendeeResponse {
   id: string;
   going: boolean | null;
   attending_cocktail: boolean | null;
+}
+
+/** A lightweight search result: one invite plus the names on it. */
+export interface InviteMatch {
+  id: string;
+  names: string[];
 }
