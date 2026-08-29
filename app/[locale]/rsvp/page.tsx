@@ -1,9 +1,9 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Locale } from '@/i18n/config';
 import PageHeader from '@/components/PageHeader';
-import CodeEntry from '@/components/CodeEntry';
+import InviteSearch from '@/components/InviteSearch';
 import RsvpForm from '@/components/RsvpForm';
-import { getInviteByCode } from '@/lib/rsvp';
+import { getInviteById } from '@/lib/rsvp';
 
 interface Props {
   params: Promise<{ locale: Locale }>;
@@ -15,9 +15,9 @@ export default async function RsvpPage({ params, searchParams }: Props) {
   setRequestLocale(locale);
 
   const t = await getTranslations('rsvp');
-  const { invite: code } = await searchParams;
+  const { invite: inviteId } = await searchParams;
 
-  const result = code ? await getInviteByCode(code) : null;
+  const result = inviteId ? await getInviteById(inviteId) : null;
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-12 sm:px-6 lg:px-8">
@@ -26,7 +26,7 @@ export default async function RsvpPage({ params, searchParams }: Props) {
       {result ? (
         <RsvpForm invite={result.invite} attendees={result.attendees} />
       ) : (
-        <CodeEntry invalid={Boolean(code)} />
+        <InviteSearch invalid={Boolean(inviteId)} />
       )}
     </div>
   );

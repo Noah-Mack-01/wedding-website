@@ -3,7 +3,7 @@ import { submitRsvp } from '@/lib/rsvp';
 import type { AttendeeResponse } from '@/data/types';
 
 interface RsvpRequestBody {
-  code?: unknown;
+  inviteId?: unknown;
   responses?: unknown;
 }
 
@@ -38,9 +38,9 @@ export async function POST(request: Request) {
     );
   }
 
-  if (typeof body.code !== 'string' || !body.code.trim()) {
+  if (typeof body.inviteId !== 'string' || !body.inviteId.trim()) {
     return NextResponse.json(
-      { ok: false, error: 'Missing invite code' },
+      { ok: false, error: 'Missing invite id' },
       { status: 400 },
     );
   }
@@ -54,11 +54,11 @@ export async function POST(request: Request) {
   }
 
   try {
-    await submitRsvp(body.code, responses);
+    await submitRsvp(body.inviteId, responses);
     return NextResponse.json({ ok: true });
   } catch (err) {
     const message = err instanceof Error ? err.message : 'Submission failed';
-    const status = message === 'Invalid invite code' ? 404 : 500;
+    const status = message === 'Invalid invite id' ? 404 : 500;
     return NextResponse.json({ ok: false, error: message }, { status });
   }
 }

@@ -36,6 +36,7 @@ export default function RsvpForm({ invite, attendees }: RsvpFormProps) {
   const t = useTranslations('rsvp');
   const [submitted, setSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState(false);
+  const greetingName = attendees.map((a) => a.name).join(' & ');
 
   const formik = useFormik<{ responses: ResponseValue[] }>({
     initialValues: {
@@ -64,7 +65,7 @@ export default function RsvpForm({ invite, attendees }: RsvpFormProps) {
         const res = await fetch('/api/rsvp', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ code: invite.code, responses }),
+          body: JSON.stringify({ inviteId: invite.id, responses }),
         });
         const data = (await res.json()) as { ok: boolean };
         if (!res.ok || !data.ok) throw new Error('submit failed');
@@ -89,7 +90,7 @@ export default function RsvpForm({ invite, attendees }: RsvpFormProps) {
       onSubmit={formik.handleSubmit}
       className="space-y-6 rounded-lg bg-white p-8 shadow-sm"
     >
-      <p className="text-body text-foreground">{t('inviteGreeting', { name: invite.name })}</p>
+      <p className="text-body text-foreground">{t('inviteGreeting', { name: greetingName })}</p>
 
       {formik.values.responses.map((r, i) => {
         const error = (
