@@ -176,6 +176,8 @@ export interface Attendee {
   id: string;
   invite_id: string;
   name: string;
+  /** Accent- and case-folded form of `name`; a generated column, read-only. */
+  normalized_name: string;
   email: string | null;
   going: boolean | null;
   attending_cocktail: boolean | null;

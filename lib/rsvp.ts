@@ -13,6 +13,20 @@ function escapeLikePattern(value: string): string {
   return value.replace(/[\\%_]/g, (ch) => `\\${ch}`);
 }
 
+/**
+ * Mirror the SQL `attendees.normalized_name` generated column: strip
+ * diacritics, lowercase, trim, and collapse internal whitespace runs. The
+ * search term must be normalized the same way to match stored values.
+ */
+function normalizeName(value: string): string {
+  return value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, ' ');
+}
+
 export interface InviteWithAttendees {
   invite: Invite;
   attendees: Attendee[];
@@ -39,7 +53,7 @@ export async function getInviteById(rawId: string): Promise<InviteWithAttendees 
 
   const { data: attendees, error: attendeesError } = await supabase
     .from('attendees')
-    .select('id, invite_id, name, email, going, attending_cocktail')
+    .select('id, invite_id, name, normalized_name, email, going, attending_cocktail')
     .eq('invite_id', id)
     .order('name', { ascending: true });
 
@@ -56,17 +70,21 @@ export async function getInviteById(rawId: string): Promise<InviteWithAttendees 
  * Intentionally avoids `.or()`: building a raw PostgREST filter string from
  * user input would let characters like `,` or `)` inject extra filter
  * clauses. Two independently-parameterized `.ilike()` calls avoid that.
+ *
+ * Name matching goes against `normalized_name` (accent/case-folded) with a
+ * likewise-normalized term; email stays a plain case-insensitive `.ilike()`.
  */
 export async function searchInvites(rawQuery: string): Promise<InviteMatch[]> {
   const term = rawQuery.trim();
   if (!term) return [];
 
-  const pattern = `%${escapeLikePattern(term)}%`;
+  const emailPattern = `%${escapeLikePattern(term)}%`;
+  const namePattern = `%${escapeLikePattern(normalizeName(term))}%`;
   const supabase = getSupabase();
 
   const [nameResult, emailResult] = await Promise.all([
-    supabase.from('attendees').select('invite_id').ilike('name', pattern),
-    supabase.from('attendees').select('invite_id').ilike('email', pattern),
+    supabase.from('attendees').select('invite_id').ilike('normalized_name', namePattern),
+    supabase.from('attendees').select('invite_id').ilike('email', emailPattern),
   ]);
 
   if (nameResult.error) throw nameResult.error;

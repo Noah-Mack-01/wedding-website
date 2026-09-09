@@ -57,7 +57,7 @@ export const hotels: Hotel[] = [
   {
     id: '0',
     name: 'Airbnb – Playa del Carmen',
-    address: 'Encuentra tus vacaciones entre 1.000 casas en Playa del Carmen',
+    address: 'Mil casas disponibles en Playa del Carmen',
     website: 'https://www.airbnb.com/s/Playa-del-Carmen--Mexico/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJYU4t0iNDTo8R3EqrO3gLweg&search_mode=regular_search&channel=EXPLORE&date_picker_type=calendar&checkin=2027-03-11&checkout=2027-03-15',
     logoUrl: '/images/airbnb-favicon.ico',
     brandColor: '#FF5A5F',
