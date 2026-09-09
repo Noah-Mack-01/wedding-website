@@ -10,7 +10,7 @@
 -- the `unaccent` text-search dictionary, which is theoretically mutable).
 -- A generated column requires an IMMUTABLE expression, so wrap it: pinning
 -- the dictionary argument makes the wrapper safe to declare IMMUTABLE.
-create extension if not exists unaccent;
+create extension if not exists unaccent with schema extensions;
 
 create or replace function immutable_unaccent(text)
   returns text
@@ -18,7 +18,7 @@ create or replace function immutable_unaccent(text)
   immutable
   parallel safe
   strict
-as $$ select unaccent('unaccent', $1) $$;
+as $$ select extensions.unaccent('extensions.unaccent', $1) $$;
 
 alter table attendees
   add column normalized_name text
