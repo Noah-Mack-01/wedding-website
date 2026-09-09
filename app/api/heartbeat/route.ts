@@ -28,7 +28,7 @@ export async function GET(request: Request) {
   try {
     await pingHeartbeat();
   } catch (err) {
-    console.error('Heartbeat update failed:', err);
+    console.error('Heartbeat insert failed:', err);
     return new NextResponse(null, { status: 500 });
   }
 
