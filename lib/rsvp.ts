@@ -56,7 +56,9 @@ export async function getInviteById(rawId: string): Promise<InviteWithAttendees 
 
   const { data: attendees, error: attendeesError } = await supabase
     .from('attendees')
-    .select('id, invite_id, name, normalized_name, email, going, attending_cocktail')
+    .select(
+      'id, invite_id, name, normalized_name, email, going, attending_cocktail, dietary_restrictions',
+    )
     .eq('invite_id', id)
     .order('name', { ascending: true });
 
@@ -144,7 +146,11 @@ export async function submitRsvp(rawId: string, responses: AttendeeResponse[]): 
   for (const r of responses) {
     const { error } = await supabase
       .from('attendees')
-      .update({ going: r.going, attending_cocktail: r.attending_cocktail })
+      .update({
+        going: r.going,
+        attending_cocktail: r.attending_cocktail,
+        dietary_restrictions: r.dietary_restrictions,
+      })
       .eq('id', r.id)
       .eq('invite_id', id); // scope: never touch another invite's rows
 

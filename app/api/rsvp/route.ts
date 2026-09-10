@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { submitRsvp } from '@/lib/rsvp';
-import type { AttendeeResponse } from '@/data/types';
+import { DIETARY_RESTRICTIONS_MAX_LENGTH, type AttendeeResponse } from '@/data/types';
 
 interface RsvpRequestBody {
   inviteId?: unknown;
@@ -16,12 +16,18 @@ function parseResponses(input: unknown): AttendeeResponse[] | null {
     if (typeof r.id !== 'string') return null;
     const going = r.going;
     const cocktail = r.attending_cocktail;
+    const dietary = r.dietary_restrictions;
     if (going !== null && typeof going !== 'boolean') return null;
     if (cocktail !== null && typeof cocktail !== 'boolean') return null;
+    if (dietary !== null && typeof dietary !== 'string') return null;
+    if (typeof dietary === 'string' && dietary.length > DIETARY_RESTRICTIONS_MAX_LENGTH) {
+      return null;
+    }
     result.push({
       id: r.id,
       going: going as boolean | null,
       attending_cocktail: cocktail as boolean | null,
+      dietary_restrictions: (dietary as string | null) ?? null,
     });
   }
   return result;
