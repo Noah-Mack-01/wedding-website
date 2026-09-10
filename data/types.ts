@@ -181,13 +181,19 @@ export interface Attendee {
   email: string | null;
   going: boolean | null;
   attending_cocktail: boolean | null;
+  /** Free-text dietary note; only captured for attending guests. */
+  dietary_restrictions: string | null;
 }
+
+/** Max length of the free-text dietary restrictions note (client + server). */
+export const DIETARY_RESTRICTIONS_MAX_LENGTH = 500;
 
 /** A single attendee's answers submitted from the RSVP form. */
 export interface AttendeeResponse {
   id: string;
   going: boolean | null;
   attending_cocktail: boolean | null;
+  dietary_restrictions: string | null;
 }
 
 /** A lightweight search result: one invite plus the names on it. */

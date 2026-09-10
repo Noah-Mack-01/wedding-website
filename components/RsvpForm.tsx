@@ -4,7 +4,12 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
-import type { Attendee, AttendeeResponse, Invite } from '@/data/types';
+import {
+  DIETARY_RESTRICTIONS_MAX_LENGTH,
+  type Attendee,
+  type AttendeeResponse,
+  type Invite,
+} from '@/data/types';
 
 interface RsvpFormProps {
   invite: Invite;
@@ -18,6 +23,7 @@ interface ResponseValue {
   name: string;
   going: Choice;
   attending_cocktail: Choice;
+  dietary_restrictions: string;
 }
 
 function toChoice(value: boolean | null): Choice {
@@ -36,7 +42,6 @@ export default function RsvpForm({ invite, attendees }: RsvpFormProps) {
   const t = useTranslations('rsvp');
   const [submitted, setSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState(false);
-  const greetingName = attendees.map((a) => a.name).join(' & ');
 
   const formik = useFormik<{ responses: ResponseValue[] }>({
     initialValues: {
@@ -45,22 +50,39 @@ export default function RsvpForm({ invite, attendees }: RsvpFormProps) {
         name: a.name,
         going: toChoice(a.going),
         attending_cocktail: toChoice(a.attending_cocktail),
+        dietary_restrictions: a.dietary_restrictions ?? '',
       })),
     },
     validationSchema: Yup.object({
       responses: Yup.array().of(
         Yup.object({
           going: Yup.string().oneOf(['yes', 'no']).required(t('attendingRequired')),
+          attending_cocktail: Yup.string().when('going', {
+            is: 'yes',
+            then: (schema) =>
+              schema.oneOf(['yes', 'no']).required(t('cocktailRequired')),
+            otherwise: (schema) => schema.notRequired(),
+          }),
+          dietary_restrictions: Yup.string().max(
+            DIETARY_RESTRICTIONS_MAX_LENGTH,
+            t('dietaryTooLong', { max: DIETARY_RESTRICTIONS_MAX_LENGTH }),
+          ),
         }),
       ),
     }),
     onSubmit: async (values) => {
       setSubmitError(false);
-      const responses: AttendeeResponse[] = values.responses.map((r) => ({
-        id: r.id,
-        going: toBoolean(r.going),
-        attending_cocktail: toBoolean(r.attending_cocktail),
-      }));
+      const responses: AttendeeResponse[] = values.responses.map((r) => {
+        const attending = r.going === 'yes';
+        return {
+          id: r.id,
+          going: toBoolean(r.going),
+          attending_cocktail: attending ? toBoolean(r.attending_cocktail) : null,
+          dietary_restrictions: attending
+            ? r.dietary_restrictions.trim() || null
+            : null,
+        };
+      });
       try {
         const res = await fetch('/api/rsvp', {
           method: 'POST',
@@ -85,6 +107,8 @@ export default function RsvpForm({ invite, attendees }: RsvpFormProps) {
     );
   }
 
+  const greetingName = attendees.map((a) => a.name).join(' & ');
+
   return (
     <form
       onSubmit={formik.handleSubmit}
@@ -93,12 +117,12 @@ export default function RsvpForm({ invite, attendees }: RsvpFormProps) {
       <p className="text-body text-foreground">{t('inviteGreeting', { name: greetingName })}</p>
 
       {formik.values.responses.map((r, i) => {
-        const error = (
-          formik.errors.responses?.[i] as { going?: string } | undefined
-        )?.going;
-        const touched = (
-          formik.touched.responses?.[i] as { going?: boolean } | undefined
-        )?.going;
+        const fieldErrors = formik.errors.responses?.[i] as
+          | { going?: string; attending_cocktail?: string; dietary_restrictions?: string }
+          | undefined;
+        const fieldTouched = formik.touched.responses?.[i] as
+          | { going?: boolean; attending_cocktail?: boolean; dietary_restrictions?: boolean }
+          | undefined;
 
         return (
           <div key={r.id} className="border-t border-soft-apricot pt-6 first:border-t-0 first:pt-0">
@@ -131,40 +155,74 @@ export default function RsvpForm({ invite, attendees }: RsvpFormProps) {
                   </label>
                 ))}
               </div>
-              {touched && error && (
-                <p className="mt-1 text-body text-vibrant-coral">{error}</p>
+              {fieldTouched?.going && fieldErrors?.going && (
+                <p className="mt-1 text-body text-vibrant-coral">{fieldErrors.going}</p>
               )}
             </div>
 
-            {/* Cocktail hour (optional, shown when attending) */}
+            {/* Shown only when attending */}
             {r.going === 'yes' && (
-              <div className="mt-3">
-                <label className="block text-body font-medium text-foreground">
-                  {t('cocktailLabel')}
-                </label>
-                <div className="mt-2 flex gap-3">
-                  {(['yes', 'no'] as const).map((val) => (
-                    <label
-                      key={val}
-                      className={`flex flex-1 cursor-pointer items-center justify-center rounded-md border px-4 py-2 text-body transition-colors ${
-                        r.attending_cocktail === val
-                          ? 'border-primary bg-muted text-primary'
-                          : 'border-soft-apricot text-foreground hover:border-primary'
-                      }`}
-                    >
-                      <input
-                        type="radio"
-                        name={`responses[${i}].attending_cocktail`}
-                        value={val}
-                        checked={r.attending_cocktail === val}
-                        onChange={formik.handleChange}
-                        className="sr-only"
-                      />
-                      {t(val === 'yes' ? 'cocktailYes' : 'cocktailNo')}
-                    </label>
-                  ))}
+              <>
+                {/* Cocktail hour (required when attending) */}
+                <div className="mt-3">
+                  <label className="block text-body font-medium text-foreground">
+                    {t('cocktailLabel')}
+                  </label>
+                  <div className="mt-2 flex gap-3">
+                    {(['yes', 'no'] as const).map((val) => (
+                      <label
+                        key={val}
+                        className={`flex flex-1 cursor-pointer items-center justify-center rounded-md border px-4 py-2 text-body transition-colors ${
+                          r.attending_cocktail === val
+                            ? 'border-primary bg-muted text-primary'
+                            : 'border-soft-apricot text-foreground hover:border-primary'
+                        }`}
+                      >
+                        <input
+                          type="radio"
+                          name={`responses[${i}].attending_cocktail`}
+                          value={val}
+                          checked={r.attending_cocktail === val}
+                          onChange={formik.handleChange}
+                          className="sr-only"
+                        />
+                        {t(val === 'yes' ? 'cocktailYes' : 'cocktailNo')}
+                      </label>
+                    ))}
+                  </div>
+                  {fieldTouched?.attending_cocktail && fieldErrors?.attending_cocktail && (
+                    <p className="mt-1 text-body text-vibrant-coral">
+                      {fieldErrors.attending_cocktail}
+                    </p>
+                  )}
                 </div>
-              </div>
+
+                {/* Dietary restrictions (optional) */}
+                <div className="mt-3">
+                  <label
+                    htmlFor={`responses[${i}].dietary_restrictions`}
+                    className="block text-body font-medium text-foreground"
+                  >
+                    {t('dietaryLabel')}
+                  </label>
+                  <textarea
+                    id={`responses[${i}].dietary_restrictions`}
+                    name={`responses[${i}].dietary_restrictions`}
+                    rows={2}
+                    maxLength={DIETARY_RESTRICTIONS_MAX_LENGTH}
+                    placeholder={t('dietaryPlaceholder')}
+                    value={r.dietary_restrictions}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    className="mt-2 w-full rounded-md border border-soft-apricot px-4 py-2 text-body text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary"
+                  />
+                  {fieldTouched?.dietary_restrictions && fieldErrors?.dietary_restrictions && (
+                    <p className="mt-1 text-body text-vibrant-coral">
+                      {fieldErrors.dietary_restrictions}
+                    </p>
+                  )}
+                </div>
+              </>
             )}
           </div>
         );
