@@ -28,6 +28,3 @@ alter table attendees
 
 create index if not exists attendees_normalized_name_idx
   on attendees (normalized_name);
-
--- Superseded by the generated column + its plain btree index above.
-drop index if exists attendees_name_lower_idx;

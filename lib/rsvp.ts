@@ -2,10 +2,13 @@ import 'server-only';
 import { getSupabase } from './supabase';
 import type { Attendee, AttendeeResponse, Invite, InviteMatch } from '@/data/types';
 
-const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+// Invite ids are the pre-generated text codes (see the invites table). Accept
+// a permissive but bounded shape so a malformed URL param is rejected before
+// it reaches the database, without assuming a specific code scheme.
+const INVITE_ID_RE = /^[A-Za-z0-9_-]{1,64}$/;
 
-function isUuid(value: string): boolean {
-  return UUID_RE.test(value.trim());
+function isValidInviteId(value: string): boolean {
+  return INVITE_ID_RE.test(value.trim());
 }
 
 /** Escape ILIKE wildcard/escape characters so user input is matched literally. */
@@ -39,7 +42,7 @@ export interface InviteWithAttendees {
  */
 export async function getInviteById(rawId: string): Promise<InviteWithAttendees | null> {
   const id = rawId.trim();
-  if (!isUuid(id)) return null;
+  if (!isValidInviteId(id)) return null;
 
   const supabase = getSupabase();
   const { data: invite, error: inviteError } = await supabase
@@ -126,7 +129,7 @@ export async function searchInvites(rawQuery: string): Promise<InviteMatch[]> {
  */
 export async function submitRsvp(rawId: string, responses: AttendeeResponse[]): Promise<void> {
   const id = rawId.trim();
-  if (!isUuid(id)) throw new Error('Invalid invite id');
+  if (!isValidInviteId(id)) throw new Error('Invalid invite id');
 
   const supabase = getSupabase();
   const { data: invite, error: inviteError } = await supabase
