@@ -5,13 +5,13 @@ export const faqs: FAQEntry[] = [
     id: '1',
     question: 'What is the dress code for the welcome party?',
     answer:
-      'Beach Cocktail Attire\n\nWomen: Breathable cocktail dress or dressy jumpsuit in vibrant colors, paired with elegant sandals or wedges.\nMen: Lightweight dress shirt and tailored pants, paired with loafers or dress shoes.',
+      'Beach Cocktail Attire\n\nWomen: Breathable cocktail dress or dressy jumpsuit in vibrant colors, paired with elegant sandals or wedges.\nMen: Lightweight dress shirt and tailored pants, paired with loafers or dress shoes.\n\nUse code MH31V37 for 20% off wedding attire at Bloomingdale\'s.',
   },
   {
     id: '2',
     question: 'What is the dress code for the wedding?',
     answer:
-      'Formal Attire\n\nWomen: Floor-length gown or elegant formal dress; comfortable heels are recommended for walking on cobblestone floor.\nMen: Formal suit with a dress shirt, tie or bow tie, and polished dress shoes; lightweight fabrics or linen suits are recommended for comfort.',
+      'Formal Attire\n\nWomen: Floor-length gown or elegant formal dress; comfortable heels are recommended for walking on cobblestone floor.\nMen: Formal suit with a dress shirt, tie or bow tie, and polished dress shoes; lightweight fabrics or linen suits are recommended for comfort.\n\nUse code MH31V37 for 20% off wedding attire at Bloomingdale\'s.',
   },
   {
     id: '3',

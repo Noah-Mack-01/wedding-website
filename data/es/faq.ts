@@ -5,13 +5,13 @@ export const faqs: FAQEntry[] = [
     id: '1',
     question: 'Cual es el codigo de vestimenta para la fiesta de bienvenida?',
     answer:
-      'Cocktail de playa\n\nMujeres: Vestido de coctel fresco o jumpsuit elegante en colores vibrantes, combinado con sandalias o cunas elegantes.\nHombres: Camisa de vestir ligera y pantalon de vestir, combinados con mocasines o zapatos de vestir.',
+      'Cocktail de playa\n\nMujeres: Vestido de coctel fresco o jumpsuit elegante en colores vibrantes, combinado con sandalias o cunas elegantes.\nHombres: Camisa de vestir ligera y pantalon de vestir, combinados con mocasines o zapatos de vestir.\n\nUsa el codigo MH31V37 para obtener 20% de descuento en atuendos para la boda en Bloomingdale\'s.',
   },
   {
     id: '2',
     question: 'Cual es el codigo de vestimenta para la boda?',
     answer:
-      'Etiqueta formal\n\nMujeres: Vestido largo o vestido formal elegante; se recomienda calzado de tacon comodo para caminar sobre piso de adoquin.\nHombres: Traje formal con camisa de vestir, corbata o corbata de mono, y zapatos de vestir; se recomiendan telas ligeras o trajes de lino para mayor comodidad.',
+      'Etiqueta formal\n\nMujeres: Vestido largo o vestido formal elegante; se recomienda calzado de tacon comodo para caminar sobre piso de adoquin.\nHombres: Traje formal con camisa de vestir, corbata o corbata de mono, y zapatos de vestir; se recomiendan telas ligeras o trajes de lino para mayor comodidad.\n\nUsa el codigo MH31V37 para obtener 20% de descuento en atuendos para la boda en Bloomingdale\'s.',
   },
   {
     id: '3',

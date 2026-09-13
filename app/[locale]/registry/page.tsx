@@ -17,6 +17,8 @@ export default async function RegistryPage({ params }: Props) {
     <div className="mx-auto max-w-2xl px-4 py-12 sm:px-6 lg:px-8">
       <PageHeader title={t('title')} />
 
+      <p className="mb-8 text-center text-body text-foreground">{t('giftMessage')}</p>
+
       <div className="space-y-6">
         {/* House Fund */}
         <a
