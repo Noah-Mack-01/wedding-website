@@ -67,7 +67,7 @@ export const activities: Activity[] = [
       'One of the most popular party spots on 12th Street — high-energy dance club playing hip-hop, Latin beats, and pop. Lively crowd and a great atmosphere.',
     destination: 'nightlife',
     travelTime: '~10 min',
-    website: 'https://www.tripadvisor.com/Attraction_Review-g150812-d6554851-Reviews-La_Vaquita-Playa_del_Carmen_Yucatan_Peninsula.html',
+    website: 'https://mandalatickets.com/en/playa/disco/la-vaquita',
   },
   {
     id: 'playa-quinta',
@@ -81,6 +81,15 @@ export const activities: Activity[] = [
   },
 
   // PLAYA DEL CARMEN - Beaches
+  {
+    id: 'playa-beach',
+    name: 'Playa del Carmen Beach',
+    description:
+      'The famous main beach with crystal-clear turquoise waters and soft white sand, lined with beach clubs, restaurants, and water sport rentals.',
+        destination: 'beach',
+    travelTime: '~10 min',
+    website: 'https://mexicancaribbean.travel/destination/playa-del-carmen/',
+  },
   {
     id: 'playa-coralina',
     name: 'Coralina Daylight Club',
@@ -101,15 +110,6 @@ export const activities: Activity[] = [
     website:
       'https://www.tripadvisor.com/Attraction_Review-g150812-d19094882-Reviews-Martina_Beach_Club-Playa_del_Carmen_Yucatan_Peninsula.html',
   },
-  {
-    id: 'playa-beach',
-    name: 'Playa del Carmen Beach',
-    description:
-      'The famous main beach with crystal-clear turquoise waters and soft white sand, lined with beach clubs, restaurants, and water sport rentals.',
-        destination: 'beach',
-    travelTime: '~10 min',
-    website: 'https://mexicancaribbean.travel/destination/playa-del-carmen/',
-  },
 
   // CENOTES
   {
@@ -120,7 +120,7 @@ export const activities: Activity[] = [
         destination: 'cenotes',
     travelTime: '~10 min',
     website:
-      'https://www.tripadvisor.com/Attraction_Review-g150812-d2400026-Reviews-Cenote_Azul-Playa_del_Carmen_Yucatan_Peninsula.html',
+      'https://www.tripadvisor.com/Attraction_Review-g150805-d153418-Reviews-Cenote_Azul-Yucatan_Peninsula.html',
       },
   {
     id: 'cenote-cristalino',
@@ -130,7 +130,7 @@ export const activities: Activity[] = [
         destination: 'cenotes',
     travelTime: '~15 min',
     website:
-      'https://www.tripadvisor.com/Attraction_Review-g150812-d2214563-Reviews-Cenote_Cristalino-Playa_del_Carmen_Yucatan_Peninsula.html',
+      'https://www.tripadvisor.com/Attraction_Review-g150812-d6953037-Reviews-Cenote_Cristalino-Playa_del_Carmen_Yucatan_Peninsula.html',
       },
   {
     id: 'cenote-dos-ojos',
