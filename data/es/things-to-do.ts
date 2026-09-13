@@ -157,28 +157,6 @@ export const activities: Activity[] = [
     website: 'http://cenotedosojos.mx/en/',
     note: 'Usa solo protector solar biodegradable.',
   },
-  {
-    id: 'cenote-gran-cenote',
-    name: 'Gran Cenote',
-    description:
-      'Uno de los cenotes más queridos de la Riviera Maya — agua cristalina, cuevas submarinas y amigables tortugas marinas nadando a tu lado.',
-    destination: 'cenotes',
-    travelTime: '~35 min',
-    website: 'https://www.visittulum.travel/en/locations/gran_cenote_',
-    note: 'Usa solo protector solar biodegradable. Llega temprano — se llena rápido.',
-  },
-  {
-    id: 'cenote-calavera',
-    name: 'Cenote Calavera',
-    description:
-      'Tres aberturas en el cielo con forma de calavera llevan a esta poza subterránea. Salta desde arriba o baja por la escalera — ambas opciones son igual de memorables.',
-    destination: 'cenotes',
-    travelTime: '~35 min',
-    website:
-      'https://www.tripadvisor.com/Attraction_Review-g150813-d10750550-Reviews-Cenote_Calavera-Tulum_Yucatan_Peninsula.html',
-    note: 'Usa solo protector solar biodegradable. Recomendado para nadadores aventureros.',
-  },
-
   // SITIOS ARQUEOLÓGICOS
   {
     id: 'ruins-tulum',
