@@ -104,7 +104,7 @@ export const activities: Activity[] = [
     id: 'playa-martina',
     name: 'Martina Beach Club',
     description:
-      'A boutique, more intimate beach club with comfortable loungers, a refreshing pool, and a relaxed vibe.',
+      'A boutique, more intimate beach club with a refreshing pool, and a relaxed vibe.',
     destination: 'beach',
     travelTime: '~10 min',
     website:

@@ -4,7 +4,7 @@ export const transportationInfo: TransportationInfo = {
   shuttleNote:
     'Consulta con tu hotel sobre el servicio de transporte hacia y desde el aeropuerto - muchos resorts lo ofrecen a sus huespedes.',
   rentalCarNote:
-    'Para mayor flexibilidad durante tu estancia, recomendamos rentar un auto en el aeropuerto.',
+    'Para mayor flexibilidad durante tu estadía, recomendamos rentar un auto en el aeropuerto.',
   rentalCarWebsite: 'https://turismousa.rentarauto.com/',
   taxiAirportRate: 'Los taxis hacia y desde el aeropuerto cuestan aproximadamente $70 USD.',
   taxiVenueRate: 'Un taxi al lugar del evento cuesta aproximadamente $20 USD.',

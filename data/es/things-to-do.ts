@@ -42,7 +42,7 @@ export const activities: Activity[] = [
     id: 'xcaret-xplor',
     name: 'Xplor',
     description:
-      '13 emocionantes tirolesas a través del dosel de la selva, más rafting en río subterráneo y vehículos anfibios a través de cuevas antiguas.',
+      '13 emocionantes tirolesas a través de la selva, más rafting en río subterráneo y vehículos anfibios a través de cuevas antiguas.',
     destination: 'xcaret',
         website: 'https://www.xplor.travel/en/',
   },
@@ -50,10 +50,9 @@ export const activities: Activity[] = [
     id: 'xcaret-xelha',
     name: 'Xel-Ha',
     description:
-      'Parque acuático natural perfecto para snorkel en una enorme ensenada natural llena de diversa vida marina y tortugas marinas.',
+      'Parque acuático natural perfecto para snorkel en una enorme ensenada natural llena de diversa vida marina.',
     destination: 'xcaret',
         website: 'https://www.xelha.com/en/',
-    note: 'Cuota de entrada gubernamental requerida (~$26)',
   },
 
   // VIDA NOCTURNA
@@ -61,12 +60,11 @@ export const activities: Activity[] = [
     id: 'playa-coco-bongo',
     name: 'Coco Bongo',
     description:
-      'Club nocturno de alta energía con actuaciones acrobáticas, imitadores de celebridades, shows en vivo y cañones de confeti. Barra libre incluida.',
+      'Club nocturno de alta energía con actuaciones acrobáticas, imitadores de celebridades, shows en vivo y cañones de confeti.',
     destination: 'nightlife',
     travelTime: '~10 min',
     website: 'https://www.cocobongo.com/show/playa-del-carmen/',
     address: 'Calle 12, Playa del Carmen',
-    note: 'Abre 10 PM, hora pico medianoche–3 AM. Reserva con anticipación.',
   },
   {
     id: 'playa-la-vaquita',
@@ -82,7 +80,7 @@ export const activities: Activity[] = [
     id: 'playa-quinta',
     name: 'Quinta Avenida',
     description:
-      'El icónico paseo peatonal de Playa del Carmen, bordeado de restaurantes, bares, música en vivo y boutiques. Lo mejor es vivirlo de noche.',
+      'El icónico paseo peatonal de Playa del Carmen, rodeado de restaurantes, bares, música en vivo y boutiques. Lo mejor es vivirlo de noche.',
     destination: 'nightlife',
     travelTime: '~10 min',
     address: 'Quinta Avenida, Playa del Carmen',
@@ -95,7 +93,7 @@ export const activities: Activity[] = [
     id: 'playa-beach',
     name: 'Playa de Playa del Carmen',
     description:
-      'La famosa playa principal con aguas turquesas cristalinas y suave arena blanca, bordeada de beach clubs, restaurantes y alquileres de deportes acuáticos.',
+      'La famosa playa principal con aguas turquesas cristalinas y suave arena blanca, bordeada de beach clubs, restaurantes y alquiler de deportes acuáticos.',
     destination: 'beach',
     travelTime: '~10 min',
     address: 'Frente de Playa, Playa del Carmen',
@@ -116,7 +114,7 @@ export const activities: Activity[] = [
     id: 'playa-martina',
     name: 'Martina Beach Club',
     description:
-      'Un beach club boutique más íntimo con tumbonas cómodas, piscina refrescante y ambiente relajado — una gran escapada de los lugares más concurridos.',
+      'Un beach club boutique más íntimo, con piscina refrescante y ambiente relajado.',
     destination: 'beach',
     travelTime: '~10 min',
     address: 'Calle 44, Playa del Carmen',
@@ -134,7 +132,6 @@ export const activities: Activity[] = [
     travelTime: '~10 min',
     website:
       'https://www.tripadvisor.com/Attraction_Review-g150805-d153418-Reviews-Cenote_Azul-Yucatan_Peninsula.html',
-    note: 'Usa solo protector solar biodegradable.',
   },
   {
     id: 'cenote-cristalino',
@@ -145,7 +142,6 @@ export const activities: Activity[] = [
     travelTime: '~15 min',
     website:
       'https://www.tripadvisor.com/Attraction_Review-g150812-d6953037-Reviews-Cenote_Cristalino-Playa_del_Carmen_Yucatan_Peninsula.html',
-    note: 'Usa solo protector solar biodegradable.',
   },
   {
     id: 'cenote-dos-ojos',
@@ -155,7 +151,6 @@ export const activities: Activity[] = [
     destination: 'cenotes',
     travelTime: '~20 min',
     website: 'http://cenotedosojos.mx/en/',
-    note: 'Usa solo protector solar biodegradable.',
   },
   // SITIOS ARQUEOLÓGICOS
   {
@@ -166,7 +161,6 @@ export const activities: Activity[] = [
     destination: 'ruins',
     travelTime: '~30 min',
     website: 'https://tulumruins.info/',
-    note: 'Llega antes de las 8am para evitar multitudes. Entrada ~$35 USD.',
   },
   {
     id: 'ruins-muyil',
@@ -177,7 +171,6 @@ export const activities: Activity[] = [
     travelTime: '~35 min',
     website:
       'https://absolute-adventure-mexico.com/maya-ruins/muyil-ruins-a-peaceful-mayan-site-on-the-edge-of-sian-kaan/',
-    note: 'Combina con un tour en lancha por Sian Ka\'an para una excursión de día completo.',
   },
   {
     id: 'ruins-coba',
@@ -188,6 +181,5 @@ export const activities: Activity[] = [
     travelTime: '~45 min',
     website:
       'https://www.tripadvisor.com/Attraction_Review-g499447-d152763-Reviews-Coba_Ruins-Coba_Yucatan_Peninsula.html',
-    note: 'Renta una bicicleta para explorar el extenso sitio. Llega temprano para evitar el calor.',
   },
 ];
