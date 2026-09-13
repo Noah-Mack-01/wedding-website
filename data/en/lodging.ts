@@ -10,18 +10,12 @@ export const hotels: Hotel[] = [
     website: 'https://www.resortsbyhyatt.com/Vivid/Vivid-playa-del-carmen',
   },
   {
-    id: '2',
-    name: 'Hilton Playa del Carmen',
-    address: '10th Ave, Centro, Playa del Carmen, Q.R. 77710, Mexico',
-    phone: '+52 984 688 0000',
-    website: 'https://www.hilton.com/en/hotels/cunpchh-hilton-playa-del-carmen/',
-  },
-  {
     id: '7',
     name: 'Hyatt Centric Playa del Carmen',
     address: '10th Ave, Centro, Playa del Carmen, Q.R. 77710, Mexico',
     phone: '+52 984 206 4800',
-    website: 'https://www.google.com/travel/hotels/s/oLA87cWeXUfj6UZs6',
+    website:
+      'https://www.hyatt.com/hyatt-centric/canth-hyatt-centric-playa-del-carmen?src=agn_koddi_crp_chico_ppc_21496721925_Conversion_Centric_Google_Search_English_CANTH_PlayaDelCarmen_Paid_Brand_CrossDevice_1x1_google_Koddi-TopUp-Evergreen-Brand_e_hyatt%20centric%20playa%20del%20carmen&gad_source=1&gad_campaignid=21496721925&gclid=Cj0KCQjwk5nVBhDiARIsAHNGqadEhiARlAGPBQnSBPYIApihhZ48h03m5Tu6kAqGAkzKzkdFHEn02wQaAluzEALw_wcB',
   },
   {
     id: '3',
@@ -29,7 +23,8 @@ export const hotels: Hotel[] = [
     address:
       'Carretera Federal Chetumal-Puerto Juarez Km 306.3, Playa del Carmen, Q.R. 77710, Mexico',
     phone: '+52 998 872 8400',
-    website: 'https://www.secrets-resorts.com/maroma-beach/',
+    website:
+      'https://www.hyattinclusivecollection.com/en/resorts-hotels/secrets/mexico/maroma-beach-riviera-cancun/',
   },
   {
     id: '4',
