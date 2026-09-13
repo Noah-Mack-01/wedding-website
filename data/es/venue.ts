@@ -1,21 +1,10 @@
 import type { VenueData } from '../types';
 
 export const venueData: VenueData = {
-  venue: {
-    name: 'Xcaret Park',
-    address: 'Carretera Chetumal, Puerto Juarez km 282-Int B',
-    city: 'Playa del Carmen',
-    state: 'Quintana Roo',
-    zipCode: '77580',
-    description:
-      'Un impresionante parque eco-arqueologico en la Riviera Maya, Xcaret ofrece una belleza natural asombrosa con rios subterraneos, playas pristinas y exuberantes paisajes selvaticos - el escenario perfecto para nuestro dia especial.',
-    phone: '+52 998 883 3143',
-    website: 'https://www.xcaret.com',
-  },
   welcomeEvent: {
     name: 'Fragata Beach Club',
     date: '12 de marzo de 2027',
-    time: '7:00 PM',
+    time: '7:00 PM - 10:00 PM',
     hostedBy: 'Organizado por la familia del novio',
     address: 'Calle Albatros Esquina Con Calle Flamingos Sin Numero, Manzana 7 Lote 1',
     city: 'Playa del Carmen',
@@ -33,28 +22,33 @@ export const venueData: VenueData = {
     },
   },
   ceremonyLocation: {
-    name: 'Capilla de Guadalupe',
+    name: 'Capilla de Nuestra Senora de Guadalupe',
     date: '13 de marzo de 2027',
     time: '7:00 PM',
     description:
-      'Construida alrededor de un cenote sagrado como ofrenda a Nuestra Senora de Guadalupe, esta impresionante capilla presenta un altar al borde del agua y una Virgen tallada en un tronco de arbol de 12 metros de altura. Reconocida oficialmente por la Iglesia Catolica Romana.',
+      'Ubicada dentro de Xcaret Park -un impresionante parque eco-arqueologico en la Riviera Maya con rios subterraneos, playas pristinas y exuberantes paisajes selvaticos-, la Capilla de Nuestra Senora de Guadalupe esta construida alrededor de un cenote sagrado como ofrenda a Nuestra Senora de Guadalupe. Esta impresionante capilla presenta un altar al borde del agua y una Virgen tallada en un tronco de arbol de 12 metros de altura, y esta reconocida oficialmente por la Iglesia Catolica Romana.',
     images: ['/images/venue/chapel-2.jpg'],
     website: 'https://www.xcaret.com/en/attractions/guadalupe-chapel/',
+    address: 'Carretera Chetumal, Puerto Juarez km 282-Int B',
+    city: 'Playa del Carmen',
+    state: 'Quintana Roo',
+    zipCode: '77580',
+    phone: '+52 998 883 3143',
+    map: {
+      embedUrl:
+        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.123456789!2d-87.119698!3d20.5809134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e446dadd87053%3A0x8042e81e921809a5!2sXcaret%20Park!5e0!3m2!1sen!2sus!4v1709318400000!5m2!1sen!2sus',
+      fallbackUrl:
+        'https://www.google.com/maps/place/Xcaret+Park/@20.5809134,-87.119698,17z',
+    },
   },
   receptionLocation: {
-    name: 'La Isla',
+    name: 'La Isla, Xcaret Park',
     date: '13 de marzo de 2027',
     time: '8:00 PM',
     description:
       'Un lugar magico con un sendero de descenso en espiral que lleva a un cruce de rio subterraneo. Un puente de cristal conecta con una palapa elegantemente equipada, creando un escenario inolvidable para nuestra celebracion.',
     images: ['/images/venue/la-isla-4.jpg'],
     website: 'https://www.bodasxcaret.com/en/xcaret-locations/',
-  },
-  map: {
-    embedUrl:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.123456789!2d-87.119698!3d20.5809134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e446dadd87053%3A0x8042e81e921809a5!2sXcaret%20Park!5e0!3m2!1sen!2sus!4v1709318400000!5m2!1sen!2sus',
-    fallbackUrl:
-      'https://www.google.com/maps/place/Xcaret+Park/@20.5809134,-87.119698,17z',
   },
   airports: [
     {

@@ -12,7 +12,7 @@ export const scheduleEvents: ScheduleEvent[] = [
     name: 'Misa',
     date: '13 de marzo de 2027',
     time: '7:00 PM',
-    location: 'Capilla de Guadalupe, Xcaret Park',
+    location: 'Capilla de Nuestra Senora de Guadalupe, Xcaret Park',
   },
 {
     id: '3',

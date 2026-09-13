@@ -8,7 +8,9 @@ interface VenueCardProps {
   phone?: string;
   email?: string;
   website?: string;
-  eyebrow?: string;
+  badge?: string;
+  date?: string;
+  time?: string;
   note?: string;
 }
 
@@ -22,12 +24,27 @@ export default function VenueCard({
   phone,
   email,
   website,
-  eyebrow,
+  badge,
+  date,
+  time,
   note,
 }: VenueCardProps) {
   return (
     <div className="rounded-lg bg-white p-6 shadow-sm">
-      {eyebrow && <p className="mb-1 text-body italic text-vibrant-coral">{eyebrow}</p>}
+      {(badge || (date && time)) && (
+        <div className="mb-3 flex items-center justify-between gap-2">
+          {badge && (
+            <span className="rounded-full bg-soft-apricot px-3 py-1 text-body font-semibold text-primary">
+              {badge}
+            </span>
+          )}
+          {date && time && (
+            <span className="text-body italic text-vibrant-coral">
+              {date} · {time}
+            </span>
+          )}
+        </div>
+      )}
       <h3 className="text-heading font-semibold text-primary">{name}</h3>
       {note && <p className="mt-1 text-body font-medium text-foreground">{note}</p>}
       <p className="mt-2 text-body text-foreground">{description}</p>

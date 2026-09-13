@@ -12,7 +12,7 @@ export const scheduleEvents: ScheduleEvent[] = [
     name: 'Mass',
     date: 'March 13, 2027',
     time: '7:00 PM',
-    location: 'Chapel of Guadalupe, Xcaret Park',
+    location: 'Chapel of Our Lady of Guadalupe, Xcaret Park',
   },
 {
     id: '3',

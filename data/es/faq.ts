@@ -37,4 +37,10 @@ export const faqs: FAQEntry[] = [
     answer:
       'No contamos con un bloque de habitaciones de hotel. Los invitados son unicamente responsables de reservar su propio alojamiento.',
   },
+  {
+    id: '7',
+    question: 'Necesito un boleto a Xcaret para asistir a la boda?',
+    answer:
+      'No, no necesitas un boleto de Xcaret Park para asistir a nuestra boda. El acceso a los lugares de la ceremonia y la recepcion esta incluido para nuestros invitados.',
+  },
 ];

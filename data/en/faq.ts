@@ -37,4 +37,10 @@ export const faqs: FAQEntry[] = [
     answer:
       'We do not have a hotel room block. Guests are solely responsible for booking their own accommodations.',
   },
+  {
+    id: '7',
+    question: 'Do I need a ticket to Xcaret to attend the wedding?',
+    answer:
+      'No, you do not need a Xcaret Park ticket to attend our wedding. Access to the ceremony and reception venues is included for our guests.',
+  },
 ];

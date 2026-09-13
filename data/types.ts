@@ -65,18 +65,6 @@ export interface BridalPartyMember {
   socialLinks?: SocialLink[];
 }
 
-export interface VenueInfo {
-  name: string;
-  address: string;
-  city: string;
-  state: string;
-  zipCode: string;
-  description: string;
-  phone?: string;
-  email?: string;
-  website?: string;
-}
-
 export interface MapConfig {
   embedUrl: string;
   fallbackUrl: string;
@@ -108,6 +96,12 @@ export interface CeremonyLocation {
   website?: string;
   date?: string;
   time?: string;
+  address?: string;
+  city?: string;
+  state?: string;
+  zipCode?: string;
+  phone?: string;
+  map?: MapConfig;
 }
 
 export interface WelcomeEvent {
@@ -126,11 +120,9 @@ export interface WelcomeEvent {
 }
 
 export interface VenueData {
-  venue: VenueInfo;
   welcomeEvent?: WelcomeEvent;
   ceremonyLocation: CeremonyLocation;
   receptionLocation: CeremonyLocation;
-  map: MapConfig;
   airports: Airport[];
   socialPosts: SocialPost[];
 }

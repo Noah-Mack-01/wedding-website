@@ -1,21 +1,10 @@
 import type { VenueData } from '../types';
 
 export const venueData: VenueData = {
-  venue: {
-    name: 'Xcaret Park',
-    address: 'Carretera Chetumal, Puerto Juarez km 282-Int B',
-    city: 'Playa del Carmen',
-    state: 'Quintana Roo',
-    zipCode: '77580',
-    description:
-      'A breathtaking eco-archaeological park on the Riviera Maya, Xcaret offers stunning natural beauty with underground rivers, pristine beaches, and lush jungle landscapes - the perfect backdrop for our special day.',
-    phone: '+52 998 883 3143',
-    website: 'https://www.xcaret.com',
-  },
   welcomeEvent: {
     name: 'Fragata Beach Club',
     date: 'March 12, 2027',
-    time: '7:00 PM',
+    time: '7:00 PM - 10:00 PM',
     hostedBy: "Hosted by the groom's family",
     address: 'Calle Albatros Esquina Con Calle Flamingos Sin Número, Manzana 7 Lote 1',
     city: 'Playa del Carmen',
@@ -33,28 +22,33 @@ export const venueData: VenueData = {
     },
   },
   ceremonyLocation: {
-    name: 'Chapel of Guadalupe',
+    name: 'Chapel of Our Lady of Guadalupe',
     date: 'March 13, 2027',
     time: '7:00 PM',
     description:
-      "Built around a sacred cenote as an offering to Our Lady of Guadalupe, this stunning chapel features an altar at the water's edge and a Virgin carved into a tree trunk standing 39 feet high. Officially recognized by the Roman Catholic Church.",
+      "Located within Xcaret Park - a breathtaking eco-archaeological park on the Riviera Maya with underground rivers, pristine beaches, and lush jungle landscapes - the Chapel of Our Lady of Guadalupe is built around a sacred cenote as an offering to Our Lady of Guadalupe. This stunning chapel features an altar at the water's edge and a Virgin carved into a tree trunk standing 39 feet high, and is officially recognized by the Roman Catholic Church.",
     images: ['/images/venue/chapel-2.jpg'],
     website: 'https://www.xcaret.com/en/attractions/guadalupe-chapel/',
+    address: 'Carretera Chetumal, Puerto Juarez km 282-Int B',
+    city: 'Playa del Carmen',
+    state: 'Quintana Roo',
+    zipCode: '77580',
+    phone: '+52 998 883 3143',
+    map: {
+      embedUrl:
+        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.123456789!2d-87.119698!3d20.5809134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e446dadd87053%3A0x8042e81e921809a5!2sXcaret%20Park!5e0!3m2!1sen!2sus!4v1709318400000!5m2!1sen!2sus',
+      fallbackUrl:
+        'https://www.google.com/maps/place/Xcaret+Park/@20.5809134,-87.119698,17z',
+    },
   },
   receptionLocation: {
-    name: 'La Isla',
+    name: 'La Isla, Xcaret Park',
     date: 'March 13, 2027',
     time: '8:00 PM',
     description:
       'A magical venue featuring a spiral descent path that leads to an underground river crossing. A glass bridge connects to an elegantly equipped palapa, creating an unforgettable setting for our celebration.',
     images: ['/images/venue/la-isla-4.jpg'],
     website: 'https://www.bodasxcaret.com/en/xcaret-locations/',
-  },
-  map: {
-    embedUrl:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.123456789!2d-87.119698!3d20.5809134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e446dadd87053%3A0x8042e81e921809a5!2sXcaret%20Park!5e0!3m2!1sen!2sus!4v1709318400000!5m2!1sen!2sus',
-    fallbackUrl:
-      'https://www.google.com/maps/place/Xcaret+Park/@20.5809134,-87.119698,17z',
   },
   airports: [
     {
