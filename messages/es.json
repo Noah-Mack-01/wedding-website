@@ -100,7 +100,7 @@
     "thankYou": "¡Gracias!",
     "confirmationMessage": "Hemos recibido tu RSVP y esperamos celebrar contigo.",
     "searchError": "Algo salió mal al buscar. Por favor inténtalo de nuevo.",
-    "resultsFound": "{count, plural, one {# invitación encontrada} other {# invitaciones encontradas}}",
+    "resultsFound": "{count, plural, one {# invitación encontrada} other {# invitaciónes encontradas}}",
     "resultsTruncated": "Mostrando las primeras coincidencias — sigue escribiendo para acotar.",
     "cocktailRequired": "Por favor indícanos sobre el cóctel",
     "dietaryLabel": "Restricciones alimentarias (opcional)",
