@@ -137,7 +137,7 @@ export const activities: Activity[] = [
     id: 'cenote-cristalino',
     name: 'Cenote Cristalino',
     description:
-      'Un impresionante cenote semi-abierto con agua cristalina, formaciones de cuevas sumergidas y plataformas para saltar. Ideal para nadar y hacer snorkel.',
+      'Un impresionante cenote semi-abierto con agua cristalina, formaciones de cuevas sumergidas y plataformas para saltar.',
     destination: 'cenotes',
     travelTime: '~15 min',
     website:
@@ -176,7 +176,7 @@ export const activities: Activity[] = [
     id: 'ruins-coba',
     name: 'Cobá',
     description:
-      'Antigua ciudad maya con la pirámide Nohoch Mul — una de las más altas de México a 42 metros, recientemente reabierta para escalar con una nueva escalera de madera.',
+      'Antigua ciudad maya con la pirámide Nohoch Mul — una de las más altas de México con 42 metros.',
     destination: 'ruins',
     travelTime: '~45 min',
     website:
