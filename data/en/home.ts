@@ -1,7 +1,7 @@
 import type { WeddingDetails } from '../types';
 
 export const weddingDetails: WeddingDetails = {
-  coupleName: 'Isabella Patino Fuentes & Noah Mack',
+  coupleName: 'Isabella Patiño Fuentes & Noah Mack',
   date: 'March 13, 2027',
   venue: {
     name: 'Hotel Xcaret Arte',

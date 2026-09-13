@@ -9,7 +9,7 @@ export const bridalParty: BridalPartyMember[] = [
   },
   {
     id: '2',
-    name: 'Isabella Patino Fuentes',
+    name: 'Isabella Patiño Fuentes',
     role: 'Bride',
     imageUrl: '/images/bridal-party/isabella-patino-fuentes.jpg',
   },
@@ -21,7 +21,7 @@ export const bridalParty: BridalPartyMember[] = [
   },
   {
     id: '4',
-    name: 'Natalia Patino Fuentes',
+    name: 'Natalia Patiño Fuentes',
     role: 'Maid of Honor',
     imageUrl: '/images/bridal-party/natalia-patino-fuentes.jpg',
   },
