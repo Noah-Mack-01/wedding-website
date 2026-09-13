@@ -13,7 +13,7 @@ export const venueData: VenueData = {
     website: 'https://www.xcaret.com',
   },
   welcomeEvent: {
-    name: 'Fraga Beach Club',
+    name: 'Fragata Beach Club',
     date: '12 de marzo de 2027',
     time: '7:00 PM',
     hostedBy: 'Organizado por la familia del novio',
