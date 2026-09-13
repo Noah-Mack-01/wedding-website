@@ -10,6 +10,10 @@ export const transportationInfo: TransportationInfo = {
   taxiVenueRate: 'Un taxi al lugar del evento cuesta aproximadamente $20 USD.',
   taxiNegotiationTip:
     'Los taxis en la zona no usan taximetro, por lo que recomendamos acordar la tarifa con el conductor antes de aceptar el viaje.',
+  taxiConciergeTip:
+    'Recomendamos coordinar tus traslados en taxi (recogida y entrega) con el conserje de tu hotel.',
+  rideshareWarning:
+    'Uber y Lyft no estan disponibles en Playa del Carmen. Te recomendamos usar taxis, el shuttle del hotel o un auto de renta para moverte.',
 };
 
 export const hotels: Hotel[] = [

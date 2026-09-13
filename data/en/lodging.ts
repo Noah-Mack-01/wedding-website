@@ -10,6 +10,10 @@ export const transportationInfo: TransportationInfo = {
   taxiVenueRate: 'A taxi to the venue is typically around $20 USD.',
   taxiNegotiationTip:
     'Taxis in the area are not metered, so we recommend agreeing on a fare with your driver before accepting a ride.',
+  taxiConciergeTip:
+    'We recommend coordinating your taxi pickups and drop-offs with your hotel concierge.',
+  rideshareWarning:
+    'Uber and Lyft are not available in Playa del Carmen. Please plan to use taxis, hotel shuttles, or a rental car to get around.',
 };
 
 export const hotels: Hotel[] = [

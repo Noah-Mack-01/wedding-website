@@ -11,7 +11,7 @@ export const faqs: FAQEntry[] = [
     id: '2',
     question: 'Cual es el codigo de vestimenta para la boda?',
     answer:
-      'Etiqueta formal\n\nMujeres: Vestido largo o vestido formal elegante; se recomienda calzado de tacon comodo para caminar sobre piso de adoquin.\nHombres: Traje formal con camisa de vestir, corbata o corbata de mono, y zapatos de vestir; se recomiendan telas ligeras o trajes de lino para mayor comodidad.\n\nUsa el codigo MH31V37 para obtener 20% de descuento en atuendos para la boda en Bloomingdale\'s.',
+      'Etiqueta formal\n\nMujeres: Vestido largo o vestido formal elegante; se recomienda calzado de tacon comodo para caminar sobre piso de adoquin.\nHombres: Traje formal con camisa de vestir y zapatos de vestir; corbata o corbata de mono opcional. Se recomiendan telas ligeras o trajes de lino para mayor comodidad.',
   },
   {
     id: '3',

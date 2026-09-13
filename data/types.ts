@@ -144,6 +144,8 @@ export interface TransportationInfo {
   taxiAirportRate: string;
   taxiVenueRate: string;
   taxiNegotiationTip: string;
+  taxiConciergeTip: string;
+  rideshareWarning: string;
 }
 
 export interface GalleryPhoto {

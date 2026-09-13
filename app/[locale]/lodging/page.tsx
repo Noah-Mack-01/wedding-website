@@ -91,6 +91,12 @@ export default async function LodgingPage({ params }: Props) {
             <p className="mt-2 text-body italic text-vibrant-coral">
               {transportationInfo.taxiNegotiationTip}
             </p>
+            <p className="mt-2 text-body italic text-vibrant-coral">
+              {transportationInfo.taxiConciergeTip}
+            </p>
+            <p className="mt-2 text-body font-medium text-foreground">
+              {transportationInfo.rideshareWarning}
+            </p>
           </div>
         </div>
       </section>
