@@ -17,7 +17,7 @@ export const faqs: FAQEntry[] = [
     id: '3',
     question: 'Can I bring a plus one?',
     answer:
-      'Please refer to your invitation for details on plus ones. If your invitation includes a guest, their name will be listed.',
+      'Please refer to your invitation for details on plus ones. If your invitation includes a guest, their name will be listed. Individuals not included in your RSVP will not be admitted to the park.',
   },
   {
     id: '4',
@@ -29,7 +29,7 @@ export const faqs: FAQEntry[] = [
     id: '5',
     question: 'What time should I arrive?',
     answer:
-      'We recommend arriving 15-30 minutes before the ceremony start time to find your seat.',
+      'We recommend arriving 30 minutes before the ceremony start time to find your seat.',
   },
   {
     id: '6',
@@ -42,5 +42,10 @@ export const faqs: FAQEntry[] = [
     question: 'Do I need a ticket to Xcaret to attend the wedding?',
     answer:
       'No, you do not need a Xcaret Park ticket to attend our wedding. Access to the ceremony and reception venues is included for our guests.',
+  },
+  {
+    id: '8',
+    question: 'How far is the wedding venue from Playa del Carmen?',
+    answer: 'The wedding venue is about 20 minutes away from Playa del Carmen.',
   },
 ];

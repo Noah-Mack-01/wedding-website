@@ -44,7 +44,7 @@ export const venueData: VenueData = {
   receptionLocation: {
     name: 'La Isla, Xcaret Park',
     date: 'March 13, 2027',
-    time: '8:00 PM',
+    time: '8:00 PM - 2:00 AM',
     description:
       'A magical venue featuring a spiral descent path that leads to an underground river crossing. A glass bridge connects to an elegantly equipped palapa, creating an unforgettable setting for our celebration.',
     images: ['/images/venue/la-isla-4.jpg'],

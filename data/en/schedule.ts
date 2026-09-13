@@ -18,7 +18,7 @@ export const scheduleEvents: ScheduleEvent[] = [
     id: '3',
     name: 'Reception',
     date: 'March 13, 2027',
-    time: '8:00 PM',
+    time: '8:00 PM - 2:00 AM',
     location: 'La Isla, Xcaret Park',
   },
 ];

@@ -17,7 +17,7 @@ export const faqs: FAQEntry[] = [
     id: '3',
     question: 'Puedo traer un acompanante?',
     answer:
-      'Por favor consulta tu invitacion para detalles sobre acompanantes. Si tu invitacion incluye un invitado, su nombre estara indicado.',
+      'Por favor consulta tu invitacion para detalles sobre acompanantes. Si tu invitacion incluye un invitado, su nombre estara indicado. Las personas que no esten incluidas en tu RSVP no podran ingresar al parque.',
   },
   {
     id: '4',
@@ -29,7 +29,7 @@ export const faqs: FAQEntry[] = [
     id: '5',
     question: 'A que hora debo llegar?',
     answer:
-      'Recomendamos llegar 15-30 minutos antes del inicio de la ceremonia para encontrar su asiento.',
+      'Recomendamos llegar 30 minutos antes del inicio de la ceremonia para encontrar su asiento.',
   },
   {
     id: '6',
@@ -42,5 +42,10 @@ export const faqs: FAQEntry[] = [
     question: 'Necesito un boleto a Xcaret para asistir a la boda?',
     answer:
       'No, no necesitas un boleto de Xcaret Park para asistir a nuestra boda. El acceso a los lugares de la ceremonia y la recepcion esta incluido para nuestros invitados.',
+  },
+  {
+    id: '8',
+    question: 'A que distancia esta el lugar de la boda de Playa del Carmen?',
+    answer: 'El lugar de la boda esta a unos 20 minutos de Playa del Carmen.',
   },
 ];
