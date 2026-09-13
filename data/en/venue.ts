@@ -13,9 +13,24 @@ export const venueData: VenueData = {
     website: 'https://www.xcaret.com',
   },
   welcomeEvent: {
-    name: 'Welcome Event',
+    name: 'Fraga Beach Club',
     date: 'March 12, 2027',
-    time: '5:00 PM',
+    time: '7:00 PM',
+    hostedBy: "Hosted by the groom's family",
+    address: 'Calle Albatros Esquina Con Calle Flamingos Sin Número, Manzana 7 Lote 1',
+    city: 'Playa del Carmen',
+    state: 'Quintana Roo',
+    zipCode: '77710',
+    description:
+      'A laid-back beachfront club at The Reef Playacar, offering ocean breezes and a relaxed seaside atmosphere - the perfect place to kick off our wedding weekend.',
+    phone: '+52 984 144 2318',
+    website: 'https://www.thereefresorts.com/fragata',
+    map: {
+      embedUrl:
+        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.820890406221!2d-87.0601298!3d20.636156199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5d1273d8023f%3A0xbf3ec59ed48523c!2sFragata%20Beach%20Club%20%26%20Restaurant!5e0!3m2!1sen!2sus!4v1789335608085!5m2!1sen!2sus',
+      fallbackUrl:
+        'https://www.google.com/maps/place/Fragata+Beach+Club+%26+Restaurant/@20.6361562,-87.0601298,17z',
+    },
   },
   ceremonyLocation: {
     name: 'Chapel of Guadalupe',
@@ -23,13 +38,7 @@ export const venueData: VenueData = {
     time: '7:00 PM',
     description:
       "Built around a sacred cenote as an offering to Our Lady of Guadalupe, this stunning chapel features an altar at the water's edge and a Virgin carved into a tree trunk standing 39 feet high. Officially recognized by the Roman Catholic Church.",
-    images: [
-      '/images/venue/chapel-1.jpg',
-      '/images/venue/chapel-2.jpg',
-      '/images/venue/chapel-3.jpg',
-      '/images/venue/chapel-4.jpg',
-      '/images/venue/chapel-5.jpg',
-    ],
+    images: ['/images/venue/chapel-2.jpg'],
     website: 'https://www.xcaret.com/en/attractions/guadalupe-chapel/',
   },
   receptionLocation: {
@@ -38,11 +47,7 @@ export const venueData: VenueData = {
     time: '8:00 PM',
     description:
       'A magical venue featuring a spiral descent path that leads to an underground river crossing. A glass bridge connects to an elegantly equipped palapa, creating an unforgettable setting for our celebration.',
-    images: [
-      '/images/venue/la-isla-1.jpg',
-      '/images/venue/la-isla-2.jpg',
-      '/images/venue/la-isla-3.jpeg',
-    ],
+    images: ['/images/venue/la-isla-4.jpg'],
     website: 'https://www.bodasxcaret.com/en/xcaret-locations/',
   },
   map: {

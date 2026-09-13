@@ -8,6 +8,8 @@ interface VenueCardProps {
   phone?: string;
   email?: string;
   website?: string;
+  eyebrow?: string;
+  note?: string;
 }
 
 export default function VenueCard({
@@ -20,10 +22,14 @@ export default function VenueCard({
   phone,
   email,
   website,
+  eyebrow,
+  note,
 }: VenueCardProps) {
   return (
     <div className="rounded-lg bg-white p-6 shadow-sm">
+      {eyebrow && <p className="mb-1 text-body italic text-vibrant-coral">{eyebrow}</p>}
       <h3 className="text-heading font-semibold text-primary">{name}</h3>
+      {note && <p className="mt-1 text-body font-medium text-foreground">{note}</p>}
       <p className="mt-2 text-body text-foreground">{description}</p>
 
       <div className="mt-4 flex flex-wrap gap-4">

@@ -113,6 +113,15 @@ export interface WelcomeEvent {
   name: string;
   date: string;
   time: string;
+  hostedBy?: string;
+  address?: string;
+  city?: string;
+  state?: string;
+  zipCode?: string;
+  description?: string;
+  phone?: string;
+  website?: string;
+  map?: MapConfig;
 }
 
 export interface VenueData {

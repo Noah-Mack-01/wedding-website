@@ -25,6 +25,34 @@ export default function VenuePage() {
     <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
       <PageHeader title={t('title')} />
 
+      {/* Welcome Party */}
+      {welcomeEvent && (
+        <section className="mb-12">
+          <VenueCard
+            name={welcomeEvent.name}
+            address={welcomeEvent.address ?? ''}
+            city={welcomeEvent.city ?? ''}
+            state={welcomeEvent.state ?? ''}
+            zipCode={welcomeEvent.zipCode ?? ''}
+            description={welcomeEvent.description ?? ''}
+            phone={welcomeEvent.phone}
+            website={welcomeEvent.website}
+            note={welcomeEvent.hostedBy}
+            eyebrow={`${t('welcomeParty')} · ${welcomeEvent.date} · ${welcomeEvent.time}`}
+          />
+          {welcomeEvent.map && (
+            <div className="mt-6">
+              <GoogleMapsEmbed
+                embedUrl={welcomeEvent.map.embedUrl}
+                venueName={welcomeEvent.name}
+                fallbackUrl={welcomeEvent.map.fallbackUrl}
+                height={400}
+              />
+            </div>
+          )}
+        </section>
+      )}
+
       {/* Venue Information */}
       <section className="mb-12">
         <VenueCard
@@ -51,18 +79,6 @@ export default function VenuePage() {
       {/* Events */}
       <section className="mb-12">
         <div className="flex flex-col gap-6">
-
-          {/* Welcome Event */}
-          {welcomeEvent && (
-            <div className={eventCardBase}>
-              <p className="mb-3 text-body italic text-vibrant-coral">
-                {welcomeEvent.date} · {welcomeEvent.time}
-              </p>
-              <h3 className="mb-2 text-heading font-semibold text-primary">
-                {welcomeEvent.name}
-              </h3>
-            </div>
-          )}
 
           {/* Ceremony */}
           <a
