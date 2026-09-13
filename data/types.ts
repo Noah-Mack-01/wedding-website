@@ -50,6 +50,7 @@ export type BridalPartyRole =
   | 'Novia'
   | 'Novio'
   | 'Dama de Honor'
+  | 'Padrino de Honor'
   | 'Padrino'
   | 'Dama'
   | 'Padrino de Boda'

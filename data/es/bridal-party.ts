@@ -22,7 +22,7 @@ export const bridalParty: BridalPartyMember[] = [
   {
     id: '4',
     name: 'Giovanni Panagiotakis',
-    role: 'Padrino',
+    role: 'Padrino de Honor',
     imageUrl: '/images/bridal-party/giovanni-panagiotakis.jpg',
   },
   {
@@ -34,7 +34,7 @@ export const bridalParty: BridalPartyMember[] = [
   {
     id: '6',
     name: 'Aidan Webster',
-    role: 'Padrino de Boda',
+    role: 'Padrino',
     imageUrl: '/images/bridal-party/aidan-webster.jpg',
   },
   {
@@ -46,7 +46,7 @@ export const bridalParty: BridalPartyMember[] = [
   {
     id: '8',
     name: 'Evan Massa',
-    role: 'Padrino de Boda',
+    role: 'Padrino',
     imageUrl: '/images/bridal-party/evan-massa.jpg',
   },
   {
@@ -58,7 +58,7 @@ export const bridalParty: BridalPartyMember[] = [
   {
     id: '10',
     name: 'Evan Silverstein',
-    role: 'Padrino de Boda',
+    role: 'Padrino',
     imageUrl: '/images/bridal-party/evan-silverstein.jpg',
   },
   {
@@ -70,7 +70,7 @@ export const bridalParty: BridalPartyMember[] = [
   {
     id: '12',
     name: 'Noah Kalischer-Coggins',
-    role: 'Padrino de Boda',
+    role: 'Padrino',
     imageUrl: '/images/bridal-party/noah-kalischer-coggins.jpg',
   },
   {
@@ -82,7 +82,7 @@ export const bridalParty: BridalPartyMember[] = [
   {
     id: '14',
     name: 'Ryan Silverstein',
-    role: 'Padrino de Boda',
+    role: 'Padrino',
     imageUrl: '/images/bridal-party/ryan-silverstein.jpg',
   },
   {
@@ -94,7 +94,7 @@ export const bridalParty: BridalPartyMember[] = [
   {
     id: '16',
     name: 'Stephen Holt',
-    role: 'Padrino de Boda',
+    role: 'Padrino',
     imageUrl: '/images/bridal-party/stephen-holt.jpg',
   },
   {
@@ -106,7 +106,7 @@ export const bridalParty: BridalPartyMember[] = [
   {
     id: '18',
     name: 'Tyler Kavanaugh',
-    role: 'Padrino de Boda',
+    role: 'Padrino',
     imageUrl: '/images/bridal-party/tyler-kavanaugh.jpg',
   },
 ];
