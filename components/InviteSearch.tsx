@@ -201,7 +201,7 @@ export default function InviteSearch({ invalid = false }: InviteSearchProps) {
                         : 'text-foreground hover:bg-muted'
                     }`}
                   >
-                    {m.names.join(' & ')}
+                    {m.names.join(', ')}
                   </li>
                 ))}
 
