@@ -127,7 +127,7 @@ export const activities: Activity[] = [
     id: 'cenote-azul',
     name: 'Cenote Azul',
     description:
-      'Uno de los cenotes más cercanos y accesibles al resort — una amplia poza al aire libre con agua de brillante azul, zonas poco profundas y saltos desde el acantilado para los más aventureros.',
+      'Uno de los cenotes más cercanos y accesibles al resort — un amplio pozo al aire libre con agua de brillante azul, zonas poco profundas y saltos desde el acantilado.',
     destination: 'cenotes',
     travelTime: '~10 min',
     website:
