@@ -26,7 +26,7 @@ export const venueData: VenueData = {
     date: '13 de marzo de 2027',
     time: '7:00 PM',
     description:
-      'Ubicada dentro de Xcaret Park -un impresionante parque eco-arqueologico en la Riviera Maya con rios subterraneos, playas pristinas y exuberantes paisajes selvaticos-, la Capilla de Nuestra Senora de Guadalupe esta construida alrededor de un cenote sagrado como ofrenda a Nuestra Senora de Guadalupe. Esta impresionante capilla presenta un altar al borde del agua y una Virgen tallada en un tronco de arbol de 12 metros de altura, y esta reconocida oficialmente por la Iglesia Catolica Romana.',
+      'La Capilla de Nuestra Senora de Guadalupe esta construida alrededor de un cenote sagrado como ofrenda a Nuestra Senora de Guadalupe. Esta impresionante capilla presenta un altar al borde del agua y una Virgen tallada en un tronco de arbol de 12 metros de altura, y esta reconocida oficialmente por la Iglesia Catolica Romana.',
     images: ['/images/venue/chapel-2.jpg'],
     website: 'https://www.xcaret.com/en/attractions/guadalupe-chapel/',
     address: 'Carretera Chetumal, Puerto Juarez km 282-Int B',

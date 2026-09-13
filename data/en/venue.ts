@@ -26,7 +26,7 @@ export const venueData: VenueData = {
     date: 'March 13, 2027',
     time: '7:00 PM',
     description:
-      "Located within Xcaret Park - a breathtaking eco-archaeological park on the Riviera Maya with underground rivers, pristine beaches, and lush jungle landscapes - the Chapel of Our Lady of Guadalupe is built around a sacred cenote as an offering to Our Lady of Guadalupe. This stunning chapel features an altar at the water's edge and a Virgin carved into a tree trunk standing 39 feet high, and is officially recognized by the Roman Catholic Church.",
+      "The Chapel of Our Lady of Guadalupe is built around a sacred cenote as an offering to Our Lady of Guadalupe. This stunning chapel features an altar at the water's edge and a Virgin carved into a tree trunk standing 39 feet high, and is officially recognized by the Roman Catholic Church.",
     images: ['/images/venue/chapel-2.jpg'],
     website: 'https://www.xcaret.com/en/attractions/guadalupe-chapel/',
     address: 'Carretera Chetumal, Puerto Juarez km 282-Int B',
