@@ -107,7 +107,7 @@ export default function RsvpForm({ invite, attendees }: RsvpFormProps) {
     );
   }
 
-  const greetingName = attendees.map((a) => a.name).join(' & ');
+  const greetingName = attendees.map((a) => a.name).join(', ');
 
   return (
     <form
