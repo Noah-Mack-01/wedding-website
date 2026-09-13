@@ -37,7 +37,7 @@ export const activities: Activity[] = [
     id: 'xcaret-xplor',
     name: 'Xplor',
     description:
-      '13 thrilling ziplines through jungle canopy, plus underground river rafting and amphibious vehicles through ancient caves.',
+      '13 thrilling ziplines through jungle canopies, underground river rafting through cenote networks.',
     destination: 'xcaret',
         website: 'https://www.xplor.travel/en/',
   },
@@ -45,7 +45,7 @@ export const activities: Activity[] = [
     id: 'xcaret-xelha',
     name: 'Xel-Ha',
     description:
-      'Natural aquatic park perfect for snorkeling in a massive natural inlet teeming with diverse marine life and sea turtles.',
+      'Natural aquatic park perfect for snorkeling in a massive natural inlet.',
         destination: 'xcaret',
         website: 'https://www.xelha.com/en/',
   },
@@ -55,7 +55,7 @@ export const activities: Activity[] = [
     id: 'playa-coco-bongo',
     name: 'Coco Bongo',
     description:
-      'High-energy nightclub with acrobatic performances, celebrity impersonators, live shows, and confetti cannons. Open bar package included.',
+      'High-energy nightclub with acrobatic performances & celebrity impersonators.',
         destination: 'nightlife',
     travelTime: '~10 min',
     website: 'https://www.cocobongo.com/show/playa-del-carmen/',
@@ -64,7 +64,7 @@ export const activities: Activity[] = [
     id: 'playa-la-vaquita',
     name: 'La Vaquita',
     description:
-      'One of the most popular party spots on 12th Street — high-energy dance club playing hip-hop, Latin beats, and pop. Lively crowd and a great atmosphere.',
+      'High-energy dance club playing hip-hop, Latin beats, and pop.',
     destination: 'nightlife',
     travelTime: '~10 min',
     website: 'https://mandalatickets.com/en/playa/disco/la-vaquita',
@@ -73,7 +73,7 @@ export const activities: Activity[] = [
     id: 'playa-quinta',
     name: 'Quinta Avenida (5th Ave)',
     description:
-      'The iconic pedestrian strip of Playa del Carmen, lined with restaurants, bars, live music, and boutique shops. Best experienced at night.',
+      'The iconic pedestrian strip of Playa del Carmen, lined with restaurants, bars, live music, and boutique shops.',
         destination: 'nightlife',
     travelTime: '~10 min',
     website:
@@ -94,7 +94,7 @@ export const activities: Activity[] = [
     id: 'playa-coralina',
     name: 'Coralina Daylight Club',
     description:
-      'One of the liveliest beach clubs in Playa del Carmen — stunning pool, resident DJs, and a festive atmosphere right on the Caribbean.',
+      'One of the liveliest beach clubs in Playa del Carmen.',
     destination: 'beach',
     travelTime: '~10 min',
     website:
@@ -104,7 +104,7 @@ export const activities: Activity[] = [
     id: 'playa-martina',
     name: 'Martina Beach Club',
     description:
-      'A boutique, more intimate beach club with comfortable loungers, a refreshing pool, and a relaxed vibe — a great escape from the busier spots.',
+      'A boutique, more intimate beach club with comfortable loungers, a refreshing pool, and a relaxed vibe.',
     destination: 'beach',
     travelTime: '~10 min',
     website:
@@ -116,7 +116,7 @@ export const activities: Activity[] = [
     id: 'cenote-azul',
     name: 'Cenote Azul',
     description:
-      'One of the closest and most accessible cenotes to the resort — a wide open-air pool with brilliant blue water, shallow areas, and cliff jumps for the adventurous.',
+      'One of the closest and most accessible cenotes to the resort.',
         destination: 'cenotes',
     travelTime: '~10 min',
     website:
@@ -126,7 +126,7 @@ export const activities: Activity[] = [
     id: 'cenote-cristalino',
     name: 'Cenote Cristalino',
     description:
-      'A stunning semi-open cenote with crystal-clear water, submerged cave formations, and cliff jumping platforms. Great for swimming and snorkeling.',
+      'A stunning semi-open cenote with crystal-clear water, submerged cave formations, and cliff jumping platforms.',
         destination: 'cenotes',
     travelTime: '~15 min',
     website:
@@ -136,7 +136,7 @@ export const activities: Activity[] = [
     id: 'cenote-dos-ojos',
     name: 'Cenote Dos Ojos',
     description:
-      'Two connected sinkholes named for their eye-like shape. Famous for cave snorkeling and diving through one of the world\'s longest underwater cave systems.',
+      'Two connected sinkholes named for their eye-like shape.',
         destination: 'cenotes',
     travelTime: '~20 min',
     website: 'http://cenotedosojos.mx/en/',
@@ -146,7 +146,7 @@ export const activities: Activity[] = [
     id: 'ruins-tulum',
     name: 'Tulum',
     description:
-      'The only walled Mayan city built on the coast, perched on cliffs overlooking the Caribbean Sea. One of the most photographed sites in Mexico.',
+      'The only walled Mayan city built on the coast, perched on cliffs overlooking the Caribbean Sea.',
         destination: 'ruins',
     travelTime: '~30 min',
     website: 'https://tulumruins.info/',
@@ -155,7 +155,7 @@ export const activities: Activity[] = [
     id: 'ruins-muyil',
     name: 'Muyil',
     description:
-      'A peaceful, lesser-visited Mayan site on the edge of the Sian Ka\'an Biosphere Reserve with forest trails and an ancient navigable canal.',
+      'A peaceful, lesser-visited Mayan site on the edge of the Sian Ka\'an Biosphere Reserve.',
         destination: 'ruins',
     travelTime: '~35 min',
     website:
@@ -165,7 +165,7 @@ export const activities: Activity[] = [
     id: 'ruins-coba',
     name: 'Coba',
     description:
-      'Ancient Mayan city with the Nohoch Mul pyramid — one of the tallest in Mexico at 138 ft, recently reopened for climbing with a new wooden staircase.',
+      'Ancient Mayan city with the Nohoch Mul pyramid.',
         destination: 'ruins',
     travelTime: '~45 min',
     website:

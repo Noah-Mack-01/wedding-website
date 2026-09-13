@@ -21,26 +21,20 @@ export const faqs: FAQEntry[] = [
   },
   {
     id: '4',
-    question: 'El lugar es accesible para sillas de ruedas?',
-    answer:
-      'Si, el lugar es completamente accesible para sillas de ruedas. Por favor contactanos si tienes necesidades especificas de accesibilidad.',
-  },
-  {
-    id: '5',
-    question: 'Habra estacionamiento disponible?',
-    answer:
-      'Si, habra servicio de valet parking gratuito para todos los invitados en el lugar.',
-  },
-  {
-    id: '6',
     question: 'Los ninos son bienvenidos?',
     answer:
       'Aunque amamos a los pequenos, esta sera una celebracion solo para adultos. Esperamos que lo entiendan.',
   },
   {
-    id: '7',
+    id: '5',
     question: 'A que hora debo llegar?',
     answer:
       'Recomendamos llegar 15-30 minutos antes del inicio de la ceremonia para encontrar su asiento.',
+  },
+  {
+    id: '6',
+    question: 'Tienen un bloque de habitaciones de hotel?',
+    answer:
+      'No contamos con un bloque de habitaciones de hotel. Los invitados son unicamente responsables de reservar su propio alojamiento.',
   },
 ];

@@ -21,26 +21,20 @@ export const faqs: FAQEntry[] = [
   },
   {
     id: '4',
-    question: 'Is the venue wheelchair accessible?',
-    answer:
-      'Yes, the venue is fully wheelchair accessible. Please contact us if you have any specific accessibility needs.',
-  },
-  {
-    id: '5',
-    question: 'Will there be parking available?',
-    answer:
-      'Yes, complimentary valet parking will be available for all guests at the venue.',
-  },
-  {
-    id: '6',
     question: 'Are children welcome?',
     answer:
       'While we love your little ones, this will be an adults-only celebration. We hope you understand.',
   },
   {
-    id: '7',
+    id: '5',
     question: 'What time should I arrive?',
     answer:
       'We recommend arriving 15-30 minutes before the ceremony start time to find your seat.',
+  },
+  {
+    id: '6',
+    question: 'Do you have a hotel room block?',
+    answer:
+      'We do not have a hotel room block. Guests are solely responsible for booking their own accommodations.',
   },
 ];

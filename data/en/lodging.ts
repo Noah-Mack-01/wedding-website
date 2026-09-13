@@ -1,4 +1,16 @@
-import type { Hotel } from '../types';
+import type { Hotel, TransportationInfo } from '../types';
+
+export const transportationInfo: TransportationInfo = {
+  shuttleNote:
+    'Check with your hotel about shuttle service to and from the airport - many resorts offer this for guests.',
+  rentalCarNote:
+    'For the most flexibility during your stay, we recommend renting a car at the airport.',
+  rentalCarWebsite: 'https://turismousa.rentarauto.com/',
+  taxiAirportRate: 'Taxis to and from the airport typically run about $70 USD.',
+  taxiVenueRate: 'A taxi to the venue is typically around $20 USD.',
+  taxiNegotiationTip:
+    'Taxis in the area are not metered, so we recommend agreeing on a fare with your driver before accepting a ride.',
+};
 
 export const hotels: Hotel[] = [
   {

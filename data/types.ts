@@ -144,6 +144,15 @@ export interface Hotel {
   brandColor?: string;
 }
 
+export interface TransportationInfo {
+  shuttleNote: string;
+  rentalCarNote: string;
+  rentalCarWebsite?: string;
+  taxiAirportRate: string;
+  taxiVenueRate: string;
+  taxiNegotiationTip: string;
+}
+
 export interface GalleryPhoto {
   id: string;
   src: string;
