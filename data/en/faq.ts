@@ -11,7 +11,7 @@ export const faqs: FAQEntry[] = [
     id: '2',
     question: 'What is the dress code for the wedding?',
     answer:
-      'Formal Attire\n\nWomen: Floor-length gown or long formal dress; comfortable heels or flats.\nMen: Formal suit with a dress shirt shoes; tie or bow tie optional. Lightweight fabrics or linen suits are recommended for comfort; the wedding venue will be outdoors.',
+      'Formal Attire\n\nWomen: Floor-length gown or long formal dress; comfortable heels or flats.\nMen: Formal suit with a dress shirt & shoes; tie or bow tie optional.\n\nLightweight fabrics or linen suits are recommended for comfort; the wedding venue will be outdoors.',
   },
   {
     id: '3',
