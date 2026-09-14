@@ -20,6 +20,7 @@ export const navLinks: NavLink[] = [
   { labelKey: 'venue', href: '/venue' },
   { labelKey: 'lodging', href: '/lodging' },
   { labelKey: 'faq', href: '/faq' },
+  { labelKey: 'rsvp', href: '/rsvp' },
   { labelKey: 'registry', href: '/registry' },
 ];
 
