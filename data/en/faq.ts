@@ -5,7 +5,7 @@ export const faqs: FAQEntry[] = [
     id: '1',
     question: 'What is the dress code for the welcome party?',
     answer:
-      'Beach Cocktail Attire\n\nWomen: Breathable cocktail dress, paired with sandals or wedges.\nMen: Lightweight dress shirt and tailored pants, paired with loafers or dress shoes.\n\nUse code MH31V37 for 20% off wedding attire at Bloomingdale\'s.',
+      'Beach Cocktail Attire\n\nWomen: Breathable cocktail dress, paired with sandals or wedges.\nMen: Lightweight dress shirt and tailored pants, paired with loafers or dress shoes.',
   },
   {
     id: '2',
@@ -47,5 +47,10 @@ export const faqs: FAQEntry[] = [
     id: '8',
     question: 'How far is the wedding venue from Playa del Carmen?',
     answer: 'The wedding venue is about 20 minutes away from Playa del Carmen.',
+  },
+  {
+    id: '9',
+    question: 'Do you have any available discounts for attire?',
+    answer: "Use code MH31V37 for 20% off wedding attire at Bloomingdale's.",
   },
 ];

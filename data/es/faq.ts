@@ -5,7 +5,7 @@ export const faqs: FAQEntry[] = [
     id: '1',
     question: '¿Cual es el codigo de vestimenta para la fiesta de bienvenida?',
     answer:
-      'Cocktail de playa\n\nMujeres: Vestido de coctel fresco o jumpsuit elegante en colores vibrantes, combinado con sandalias.\nHombres: Camisa de vestir ligera y pantalon de vestir, combinados con mocasines o zapatos de vestir.\n\nUsa el codigo MH31V37 para obtener 20% de descuento en atuendos para la boda en Bloomingdale\'s.',
+      'Cocktail de playa\n\nMujeres: Vestido de coctel fresco o jumpsuit elegante en colores vibrantes, combinado con sandalias.\nHombres: Camisa de vestir ligera y pantalon de vestir, combinados con mocasines o zapatos de vestir.',
   },
   {
     id: '2',
@@ -47,5 +47,11 @@ export const faqs: FAQEntry[] = [
     id: '8',
     question: '¿A cual distancia está el lugar de la boda a Playa del Carmen?',
     answer: 'El lugar de la boda está a unos 20 minutos de Playa del Carmen en auto.',
+  },
+  {
+    id: '9',
+    question: '¿Tienen algún descuento disponible para la vestimenta?',
+    answer:
+      'Usa el codigo MH31V37 para obtener 20% de descuento en atuendos para la boda en Bloomingdale\'s.',
   },
 ];
