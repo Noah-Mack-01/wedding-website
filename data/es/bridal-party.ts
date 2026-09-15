@@ -27,7 +27,7 @@ export const bridalParty: BridalPartyMember[] = [
   },
   {
     id: '5',
-    name: 'Alexandra Heinlein',
+    name: 'Alexandria Heinlein',
     role: 'Dama',
     imageUrl: '/images/bridal-party/alexandra-heinlein.jpg',
   },
